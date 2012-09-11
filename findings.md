@@ -14,4 +14,10 @@ Problems: biggest one is going to be equations. If you read heavy equation
 papers probably the easiest way to get them is included as images. For example, 
 BMC Bioinformatics allows switching between using and not using mathjax.
 
+# P.E.T.
+
+[Murray Meehan](http://murraymeehan.blogspot.com) has an idea for a [PDF to 
+Ebook Transmogrifier](http://murraymeehan.blogspot.com/2012/06/pet-pdf-to-ebook-transmogrifier.html) that it sounds like he may be working on. This could be
+very interesting.
+
 
