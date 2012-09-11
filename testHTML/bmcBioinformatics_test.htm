@@ -1,0 +1,2164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html id="js" xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:og="http://ogp.me/ns#" xml:lang="en-GB" lang="en-GB"><head>
+    <title>BMC Bioinformatics | Full text | CaPSID: A bioinformatics 
+platform for computational pathogen sequence identification in human 
+genomes and transcriptomes</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.biomedcentral.com/images/icon/1002/favicon.ico">
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+                
+
+
+
+
+		
+		
+		
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/" xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+<cc:Work rdf:about="http://www.biomedcentral.com/1471-2105/13/206">
+<cc:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
+</cc:Work>
+<cc:License rdf:about="http://creativecommons.org/licenses/by/2.0/">
+<cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+<cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+<cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
+<cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+<cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+</cc:License>
+<item rdf:about="http://www.biomedcentral.com/1471-2105/13/206">
+<title>CaPSID: A bioinformatics platform for computational pathogen sequence identification in human genomes and transcriptomes</title>
+<dc:title>CaPSID: A bioinformatics platform for computational pathogen sequence identification in human genomes and transcriptomes</dc:title>
+<dc:creator>Borozan, Ivan</dc:creator>
+<dc:creator>Wilson, Shane</dc:creator>
+<dc:creator>Blanchette, Paola</dc:creator>
+<dc:creator>Laflamme, Philippe</dc:creator>
+<dc:creator>Watt, Stuart N</dc:creator>
+<dc:creator>Krzyzanowski, Paul M</dc:creator>
+<dc:creator>Sircoulomb, Fabrice</dc:creator>
+<dc:creator>Rottapel, Robert</dc:creator>
+<dc:creator>Branton, Philip E</dc:creator>
+<dc:creator>Ferretti, Vincent</dc:creator>
+<dc:identifier>info:doi/10.1186/1471-2105-13-206</dc:identifier>
+<dc:identifier>info:pmid/22901030</dc:identifier>
+<dc:source>BMC Bioinformatics 2012, 13:206</dc:source>
+<dc:date>2012-08-17</dc:date>
+
+<prism:publicationName>BMC Bioinformatics</prism:publicationName>
+<prism:publicationDate>2012-08-17</prism:publicationDate>
+<prism:volume>13</prism:volume>
+<prism:number>1</prism:number>
+<prism:section>Software</prism:section>
+<prism:startingPage>206</prism:startingPage>
+<prism:copyright>2012 Borozan et al.; licensee BioMed Central Ltd.</prism:copyright>
+</item>
+</rdf:RDF>
+ -->
+ 
+ 
+<meta name="citation_journal_title" content="BMC Bioinformatics">
+<meta name="citation_publisher" content="BioMed Central Ltd">
+<meta name="citation_authors" content="Ivan Borozan; Shane Wilson; Paola Blanchette; Philippe Laflamme; Stuart N Watt; Paul M Krzyzanowski; Fabrice Sircoulomb; Robert Rottapel; Philip E Branton; Vincent Ferretti">
+<meta name="citation_title" content="CaPSID: A bioinformatics platform for computational pathogen sequence identification in human genomes and transcriptomes">
+<meta name="citation_volume" content="13">
+<meta name="citation_issue" content="1">
+<meta name="citation_date" content="2012-08-17">
+<meta name="citation_firstpage" content="206">
+<meta name="citation_doi" content="10.1186/1471-2105-13-206">
+<meta name="title" content="CaPSID: A bioinformatics platform for computational pathogen sequence identification in human genomes and transcriptomes">
+<meta name="description" content="It is now well established that nearly 20% of human cancers are caused by infectious agents, and the list of human oncogenic pathogens will grow in the future for a variety of cancer types. Whole tumor transcriptome and genome sequencing by next-generation sequencing technologies presents an unparalleled opportunity for pathogen detection and discovery in human tissues but requires development of new genome-wide bioinformatics tools.">
+
+<meta name="dc.title" content="CaPSID: A bioinformatics platform for computational pathogen sequence identification in human genomes and transcriptomes">
+<meta name="dc.creator" content="Borozan, Ivan">
+<meta name="dc.creator" content="Wilson, Shane">
+<meta name="dc.creator" content="Blanchette, Paola">
+<meta name="dc.creator" content="Laflamme, Philippe">
+<meta name="dc.creator" content="Watt, Stuart N">
+<meta name="dc.creator" content="Krzyzanowski, Paul M">
+<meta name="dc.creator" content="Sircoulomb, Fabrice">
+<meta name="dc.creator" content="Rottapel, Robert">
+<meta name="dc.creator" content="Branton, Philip E">
+<meta name="dc.creator" content="Ferretti, Vincent">
+<meta name="dc.description" content="It is now well established that nearly 20% of human cancers are caused by infectious agents, and the list of human oncogenic pathogens will grow in the future for a variety of cancer types. Whole tumor transcriptome and genome sequencing by next-generation sequencing technologies presents an unparalleled opportunity for pathogen detection and discovery in human tissues but requires development of new genome-wide bioinformatics tools.">
+<meta name="dc.source" content="BMC Bioinformatics 2012 13:206">
+<meta name="dc.format" content="text/html">
+<meta name="dc.publisher" content="BioMed Central Ltd">
+<meta name="dc.date" content="2012-08-17">
+<meta name="dc.type" content="Software">
+<meta name="dc.identifier" content="10.1186/1471-2105-13-206">
+<meta name="dc.language" content="en">
+<meta name="dc.copyright" content="2012 Borozan et al.; licensee BioMed Central Ltd.">
+<meta name="dc.rights" content="http://creativecommons.org/licenses/by/2.0/">
+<meta name="dc.rightsAgent" content="reprints@biomedcentral.com">
+
+<meta name="prism.issn" content="1471-2105">
+<meta name="prism.publicationName" content="BMC Bioinformatics">
+<meta name="prism.publicationDate" content="2012-08-17">
+<meta name="prism.volume" content="13">
+<meta name="prism.number" content="1">
+<meta name="prism.section" content="Software">
+<meta name="prism.startingPage" content="206">
+<meta name="prism.copyright" content="2012 Borozan et al.; licensee BioMed Central Ltd.">
+<meta name="prism.rightsAgent" content="reprints@biomedcentral.com">
+
+
+
+
+<link rel="alternate" type="application/pdf" title="PDF" href="http://www.biomedcentral.com/bmcbioinformatics/content/pdf/1471-2105-13-206.pdf">
+<meta name="citation_pdf_url" content="http://www.biomedcentral.com/bmcbioinformatics/content/pdf/1471-2105-13-206.pdf">
+
+<meta name="citation_abstract_html_url" content="http://www.biomedcentral.com/1471-2105/13/206/abstract">
+<meta name="citation_fulltext_html_url" content="http://www.biomedcentral.com/1471-2105/13/206">
+<meta name="citation_pdf_url" content="http://www.biomedcentral.com/bmcbioinformatics/content/pdf/1471-2105-13-206.pdf">
+<link rel="alternate" type="application/pdf" title="PDF" href="http://www.biomedcentral.com/bmcbioinformatics/content/pdf/1471-2105-13-206.pdf">
+
+<link rel="alternate" type="text/xml" title="XML version" href="http://www.biomedcentral.com/bmcbioinformatics/content/download/xml/1471-2105-13-206.xml">
+
+<link rel="image_src" href="http://biomedcentral.com/bmcbioinformatics/content/figures/1471-2105-13-206-toc.gif">
+
+
+
+    <link rel="section" href="http://www.biomedcentral.com/content/download/supplementary/1471-2105-13-206-s1.xls" title="Additional file 1">
+
+    
+    
+                    
+    
+<script async="" src="bmcBioinformatics_test_files/cbgapi.loaded_0"></script><script src="bmcBioinformatics_test_files/widgets.js" id="twitter-wjs"></script><script gapi_processed="true" src="bmcBioinformatics_test_files/plusone.js" async="" type="text/javascript"></script><script src="bmcBioinformatics_test_files/all.js" id="facebook-jssdk"></script><script type="text/javascript">
+// must run before css
+document.documentElement.id = "js";
+</script>
+
+                <link rel="stylesheet" type="text/css" href="bmcBioinformatics_test_files/main-0.css" media="screen, print">
+                    <link rel="stylesheet" type="text/css" href="bmcBioinformatics_test_files/plugins-0.css" media="screen, print">
+    
+
+
+
+    
+                    <link rel="stylesheet" type="text/css" href="bmcBioinformatics_test_files/articles-0.css" media="screen, print">
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="bmcBioinformatics_test_files/1002.css" media="screen, print">
+
+
+                <link rel="stylesheet" type="text/css" href="bmcBioinformatics_test_files/print-0.css" media="print">
+    
+
+
+<!--[if IE]>
+                    <link rel="stylesheet" type="text/css" href="/css/hacks/ie-0.css"/>
+    <![endif]-->
+
+<!--[if IE 7]>
+                    <link rel="stylesheet" type="text/css" href="/css/hacks/ie7-0.css"/>
+    <![endif]-->
+
+
+<script type="text/javascript">
+    //configuration
+    OAS_url = 'http://oas.biomedcentral.com/RealMedia/ads/';
+
+	// control of advert's position on page [AMC]
+    
+    	
+	
+    OAS_sitepage = 'biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206';
+    	
+		OAS_listpos = 'Top,x96,Bottom';
+	
+	
+			
+		OAS_query = '';
+		
+	
+
+    OAS_target = '_top';
+    //end of configuration
+    OAS_version = 10;
+    OAS_rn = '001234567890'; OAS_rns = '1234567890';
+    OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+    function OAS_NORMAL(pos) {
+		document.write('<a href="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" target="' + OAS_target + '">');
+		document.write('<img src="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" border="0"/></a>');
+    }
+	function refererTerms(referer) {
+		referer = referer.split("q=");
+		referer = referer[1].split("&");
+		referer = referer[0];
+		if(referer.match("%20") != null && referer.match("%20").length >= 1) {
+			referer =  referer.replace(/%20/gi,"+");
+			return referer;
+		} else { return referer; }
+	}
+ </script>
+
+ 
+ <style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-family: serif; font-size: 85%; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuTitle {background-color: #CCCCCC; margin: -1px -1px 1px -1px; text-align: center; font-style: italic; font-size: 80%; color: #444444; padding: 2px 0; overflow: hidden}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+</style><style type="text/css">#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">DIV.MathJax_MathML {text-align: center; margin: .75em 0px}
+[mathvariant="double-struck"] {font-family: MathJax_AMS}
+[mathvariant="script"] {font-family: MathJax_Script}
+[mathvariant="fraktur"] {font-family: MathJax_Fraktur}
+[mathvariant="-tex-oldstyle"] {font-family: MathJax_Caligraphic}
+[mathvariant="-tex-oldstyle-bold"] {font-family: MathJax_Caligraphic; font-weight: bold}
+[mathvariant="-tex-caligraphic"] {font-family: MathJax_Caligraphic}
+[mathvariant="-tex-caligraphic-bold"] {font-family: MathJax_Caligraphic; font-weight: bold}
+[mathvariant="bold-script"] {font-family: MathJax_Script; font-weight: bold}
+[mathvariant="bold-fraktur"] {font-family: MathJax_Fraktur; font-weight: bold}
+[mathvariant="monospace"] {font-family: monospace}
+[mathvariant="sans-serif"] {font-family: sansserif}
+[mathvariant="bold-sans-serif"] {font-family: sansserif; font-weight: bold}
+[mathvariant="sans-serif-italic"] {font-family: sansserif; font-style: italic}
+[mathvariant="sans-serif-bold-italic"] {font-family: sansserif; font-style: italic; font-weight: bold}
+@font-face /*1*/ {font-family: MathJax_AMS; src: local('MathJax_AMS'), url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf')}
+@font-face /*2*/ {font-family: MathJax_Script; src: local('MathJax_Script'), url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf')}
+@font-face /*3*/ {font-family: MathJax_Fraktur; src: local('MathJax_Fraktur'), url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf')}
+@font-face /*4*/ {font-family: MathJax_Caligraphic; src: local('MathJax_Caligraphic'), url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf')}
+@font-face /*5*/ {font-family: MathJax_Fraktur; font-weight: bold; src: local('MathJax_Fraktur-Bold'), url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf')}
+@font-face /*6*/ {font-family: MathJax_Caligraphic; font-weight: bold; src: local('MathJax_Caligraphic-Bold'), url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf')}
+</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}
+.fb_invisible{display:none}
+.fb_reset{background:none;border-spacing:0;border:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}
+.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}
+.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px}
+.fb_dialog_content{background:#fff;color:#333}
+.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/y6/x/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px;top:8px\9;right:7px\9}
+.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}
+.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}
+.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/y6/x/s816eWC-2sl.gif)}
+.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/y6/x/s816eWC-2sl.gif)}
+.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}
+.fb_dialog_top_left,
+.fb_dialog_top_right,
+.fb_dialog_bottom_left,
+.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}
+.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}
+.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}
+.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}
+.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right,
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right{width:10px;height:100%}
+.fb_dialog_vert_left{margin-left:-10px}
+.fb_dialog_vert_right{right:0;margin-right:-10px}
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{width:100%;height:10px}
+.fb_dialog_horiz_top{margin-top:-10px}
+.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}
+.fb_dialog_iframe{line-height:0}
+.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}
+.fb_dialog_content .dialog_title > span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yD/x/Cou7n-nqK52.gif)
+no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}
+body.fb_hidden{-webkit-transform:none;height:100%;margin:0;left:-10000px;overflow:visible;position:absolute;top:-10000px;width:100%
+}
+.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yc/x/3rhSv5V8j3o.gif)
+white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}
+.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}
+#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}
+#fb-root #fb_dialog_ipad_overlay.hidden{display:none}
+.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}
+.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0 0, 0 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}
+.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%
+}
+.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0 0, 0 100%, from(#4966A6),
+color-stop(0.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset,
+rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}
+.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}
+.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yJ/x/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}
+.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}
+#fb_dialog_loader_close{float:left}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{position:relative;display:-moz-inline-block;display:inline-block}
+.fb_iframe_widget iframe{position:absolute}
+.fb_iframe_widget_lift{z-index:1}
+.fb_iframe_widget span{position:relative;display:inline-block;vertical-align:text-bottom;text-align:justify}
+.fb_hide_iframes iframe{position:relative;left:-10000px}
+.fb_iframe_widget_loader{position:relative;display:inline-block}
+.fb_iframe_widget_fluid{display:inline}
+.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}
+.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yJ/x/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_button_simple,
+.fb_button_simple_rtl{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yH/x/eIpbnVKI9lR.png);background-repeat:no-repeat;cursor:pointer;outline:none;text-decoration:none}
+.fb_button_simple_rtl{background-position:right 0}
+.fb_button_simple .fb_button_text{margin:0 0 0 20px;padding-bottom:1px}
+.fb_button_simple_rtl .fb_button_text{margin:0 10px 0 0}
+a.fb_button_simple:hover .fb_button_text,
+a.fb_button_simple_rtl:hover .fb_button_text,
+.fb_button_simple:hover .fb_button_text,
+.fb_button_simple_rtl:hover .fb_button_text{text-decoration:underline}
+.fb_button,
+.fb_button_rtl{background:#29447e url(http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png);background-repeat:no-repeat;cursor:pointer;display:inline-block;padding:0 0 0 1px;text-decoration:none;outline:none}
+.fb_button .fb_button_text,
+.fb_button_rtl .fb_button_text{background:#5f78ab url(http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png);border-top:solid 1px #879ac0;border-bottom:solid 1px #1a356e;color:#fff;display:block;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-weight:bold;padding:2px 6px 3px 6px;margin:1px 1px 0 21px;text-shadow:none}
+a.fb_button,
+a.fb_button_rtl,
+.fb_button,
+.fb_button_rtl{text-decoration:none}
+a.fb_button:active .fb_button_text,
+a.fb_button_rtl:active .fb_button_text,
+.fb_button:active .fb_button_text,
+.fb_button_rtl:active .fb_button_text{border-bottom:solid 1px #29447e;border-top:solid 1px #45619d;background:#4f6aa3;text-shadow:none}
+.fb_button_xlarge,
+.fb_button_xlarge_rtl{background-position:left -60px;font-size:24px;line-height:30px}
+.fb_button_xlarge .fb_button_text{padding:3px 8px 3px 12px;margin-left:38px}
+a.fb_button_xlarge:active{background-position:left -99px}
+.fb_button_xlarge_rtl{background-position:right -268px}
+.fb_button_xlarge_rtl .fb_button_text{padding:3px 8px 3px 12px;margin-right:39px}
+a.fb_button_xlarge_rtl:active{background-position:right -307px}
+.fb_button_large,
+.fb_button_large_rtl{background-position:left -138px;font-size:13px;line-height:16px}
+.fb_button_large .fb_button_text{margin-left:24px;padding:2px 6px 4px 6px}
+a.fb_button_large:active{background-position:left -163px}
+.fb_button_large_rtl{background-position:right -346px}
+.fb_button_large_rtl .fb_button_text{margin-right:25px}
+a.fb_button_large_rtl:active{background-position:right -371px}
+.fb_button_medium,
+.fb_button_medium_rtl{background-position:left -188px;font-size:11px;line-height:14px}
+a.fb_button_medium:active{background-position:left -210px}
+.fb_button_medium_rtl{background-position:right -396px}
+.fb_button_text_rtl,
+.fb_button_medium_rtl .fb_button_text{padding:2px 6px 3px 6px;margin-right:22px}
+a.fb_button_medium_rtl:active{background-position:right -418px}
+.fb_button_small,
+.fb_button_small_rtl{background-position:left -232px;font-size:10px;line-height:10px}
+.fb_button_small .fb_button_text{padding:2px 6px 3px;margin-left:17px}
+a.fb_button_small:active,
+.fb_button_small:active{background-position:left -250px}
+.fb_button_small_rtl{background-position:right -440px}
+.fb_button_small_rtl .fb_button_text{padding:2px 6px;margin-right:18px}
+a.fb_button_small_rtl:active{background-position:right -458px}
+.fb_share_count_wrapper{position:relative;float:left}
+.fb_share_count{background:#b0b9ec none repeat scroll 0 0;color:#333;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;text-align:center}
+.fb_share_count_inner{background:#e8ebf2;display:block}
+.fb_share_count_right{margin-left:-1px;display:inline-block}
+.fb_share_count_right .fb_share_count_inner{border-top:solid 1px #e8ebf2;border-bottom:solid 1px #b0b9ec;margin:1px 1px 0 1px;font-size:10px;line-height:10px;padding:2px 6px 3px;font-weight:bold}
+.fb_share_count_top{display:block;letter-spacing:-1px;line-height:34px;margin-bottom:7px;font-size:22px;border:solid 1px #b0b9ec}
+.fb_share_count_nub_top{border:none;display:block;position:absolute;left:7px;top:35px;margin:0;padding:0;width:6px;height:7px;background-repeat:no-repeat;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yP/x/bSOHtKbCGYI.png)}
+.fb_share_count_nub_right{border:none;display:inline-block;padding:0;width:5px;height:10px;background-repeat:no-repeat;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/x/i_oIVTKMYsL.png);vertical-align:top;background-position:right 5px;z-index:10;left:2px;margin:0 2px 0 0;position:relative}
+.fb_share_no_count{display:none}
+.fb_share_size_Small .fb_share_count_right .fb_share_count_inner{font-size:10px}
+.fb_share_size_Medium .fb_share_count_right .fb_share_count_inner{font-size:11px;padding:2px 6px 3px;letter-spacing:-1px;line-height:14px}
+.fb_share_size_Large .fb_share_count_right .fb_share_count_inner{font-size:13px;line-height:16px;padding:2px 6px 4px;font-weight:normal;letter-spacing:-1px}
+.fb_share_count_hidden .fb_share_count_nub_top,
+.fb_share_count_hidden .fb_share_count_top,
+.fb_share_count_hidden .fb_share_count_nub_right,
+.fb_share_count_hidden .fb_share_count_right{visibility:hidden}
+.fb_connect_bar_container div,
+.fb_connect_bar_container span,
+.fb_connect_bar_container a,
+.fb_connect_bar_container img,
+.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}
+.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}
+.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}
+.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}
+.fb_connect_bar a:hover{color:#fff}
+.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}
+.fb_connect_bar div a,
+.fb_connect_bar span,
+.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}
+.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fb_edge_widget_with_comment{position:relative;*z-index:1000}
+.fb_edge_widget_with_comment span.fb_edge_comment_widget{position:absolute}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget{z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget .FB_Loader{left:0;top:1px;margin-top:6px;margin-left:0;background-position:50% 50%;background-color:#fff;height:150px;width:394px;border:1px #666 solid;border-bottom:2px solid #283e6c;z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.dark .FB_Loader{background-color:#000;border-bottom:2px solid #ccc}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.siderender
+.FB_Loader{margin-top:0}
+.fbpluginrecommendationsbarleft,
+.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}
+/* @noflip */
+.fbpluginrecommendationsbarleft{left:10px}
+/* @noflip */
+.fbpluginrecommendationsbarright{right:10px}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block; width: 100%}
+.MathJax .merror {color: black; border: 1px solid; padding: 1px 3px; font-family: serif; font-size: 80%; vertical-align: ; text-align: left}
+.MathJax_Preview {color: #888888}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-family: serif; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; border: 0; padding: 0; margin: 0}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0 !important; padding: 0 !important; margin: 0 !important; vertical-align: 0 !important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap}
+.MathJax img {display: inline ! important}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax .MathJax_HitBox {cursor: text}
+#MathJax_Tooltip * {filter: none; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf')}
+@font-face {font-family: MathJax_Main; src: url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf'); font-weight: bold}
+@font-face {font-family: MathJax_Main; src: url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf'); font-style: italic}
+@font-face {font-family: MathJax_Math; src: url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf'); font-style: italic}
+@font-face {font-family: MathJax_Caligraphic; src: url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf')}
+@font-face {font-family: MathJax_Size1; src: url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf')}
+@font-face {font-family: MathJax_Size2; src: url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf')}
+@font-face {font-family: MathJax_Size3; src: url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf')}
+@font-face {font-family: MathJax_Size4; src: url('http://cdn.mathjax.org/mathjax/1.1-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf')}
+#MathJax_getScales {font-family: MathJax_Main,MathJax_Size1,MathJax_AMS}
+.MathJax .math span {font-family: MathJax_Main,MathJax_Size1,MathJax_AMS}
+</style></head><body data-twttr-rendered="true" class=" theme   "><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object data="bmcBioinformatics_test_files/storage.swf" id="_GPL_e6a00_swf" type="application/x-shockwave-flash" height="1" width="1"><param value="transparent" name="wmode"><param value="always" name="allowscriptaccess"><param value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl" name="flashvars"></object></div><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px none; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div style="display: none;" id="MathJax_Message"></div><div id="oas-campaign" style="display:none">biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206</div>
+ <div id="oas-positions" style="display:none">Bottom,Top</div> 
+
+
+ <script type="text/javascript">
+	// Set the version of JavaScript to 10 for a Browser 'Mozilla/3' on webTV 
+    OAS_version = 11;
+    if ((navigator.userAgent.indexOf('Mozilla/3') != -1) || (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1)) {
+     OAS_version = 10; }
+    if (OAS_version >= 11) {
+    document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/script>'); }
+</script><script type="text/javascript" src="bmcBioinformatics_test_files/1171715995Topx96Bottom.js"></script>
+	
+<script type="text/javascript">
+    document.write('');
+	
+    function OAS_AD(pos) {
+        if (OAS_version >= 11)
+         OAS_RICH(pos);
+        else
+         OAS_NORMAL(pos);
+    }
+ </script>
+
+
+
+
+<script type="text/javascript">
+    jsonLoaders = function(){
+        var _loaders = [];
+        return {
+            register: function(config){
+                config.prefix = config.prefix || '/webapi/1.0/blogs/';
+                config.feedLength = config.feedLength || 3;
+
+                _loaders.push(config);
+            },
+            list: function(){return _loaders}
+        };
+    }();
+
+    function totext() {
+	    document.write('<a href="javascript:returnToText();">Return to text</a>');
+    }
+
+    function retrieve_doi(){
+        var metas = document.getElementsByTagName('meta');
+        var i;
+        for (i = 0; i < metas.length; i++)
+            if (metas[i].getAttribute('name') == "citation_doi")
+                break;
+        var citation_doi = metas[i].getAttribute('content');
+        return citation_doi;
+    }
+
+</script>
+
+        <link title="Latest articles" rel="alternate" href="http://www.biomedcentral.com/bmcbioinformatics/latest/rss" type="application/rss+xml" exposetoheader="true">
+    <link title="Most viewed" rel="alternate" href="http://www.biomedcentral.com/bmcbioinformatics/mostviewed/rss/" type="application/rss+xml" exposetoheader="true">
+    <link title="Latest comments" rel="alternate" href="http://www.biomedcentral.com/bmcbioinformatics/latestcomments/rss" type="application/rss+xml" exposetoheader="true">
+
+
+
+
+
+
+
+
+<script>
+var request_Id = '$request_Id';
+var  isDbStats = '$isDbstats';
+</script><div id="branding">
+            
+<dl class="google-ad wide  advert-text">
+        
+                    <dt style="display: block;" class="hide"></dt>
+             
+        <dd>
+<!-- OAS AD 'Top' begin -->
+<script type="text/javascript">
+OAS_AD('Top');
+
+</script>
+<script type="text/javascript"> 
+var TFSMFlash_PRETAG="";
+var TFSMFlash_POSTTAG=""; 
+var TFSMFlash_VERSION="8"; 
+var TFSMFlash_WMODE="window"; 
+var TFSMFlash_OASCLICK="http://oas.biomedcentral.com/5c/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/L43/1238072094/Top/biomed/House-SE-biodatamining-LB/House-SE-biodatamining-LB.html/32506d4b446b764f387a6341446f3736";
+var TFSMFlash_SWFCLICKVARIABLE="?clickTAG="+TFSMFlash_OASCLICK ; 
+var TFSMFlash_SWFFILE="http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/biomed/House-SE-biodatamining-LB/BioData_Mining_Leaderboard_v2.swf/1272555148"+TFSMFlash_SWFCLICKVARIABLE; 
+var TFSMFlash_FSCOMMAND=""; 
+var TFSMFlash_IMAGEALTERNATE="http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/biomed/House-SE-biodatamining-LB/BioData_Mining_Leaderboard_v2.gif/1272555148"; 
+var TFSMFlash_OASALTTEXT=""; 
+var TFSMFlash_OASTARGET="_blank"; 
+var TFSMFlash_OASPROTOCOL="http://"; 
+var TFSMFlash_OASDIM="WIDTH='728' HEIGHT='90'"; 
+var TFSMFlash_OASADID="OAS_RMF_Top_FLASH"; 
+document.write('<scr'+'ipt src="http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/biomed/House-SE-biodatamining-LB/TFSMFlashWrapper204.js/1272555148"></scr'+'ipt>'); 
+</script><script src="bmcBioinformatics_test_files/1272555148.js"></script><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" id="OAS_RMF_Top_FLASH" alt="" align="" height="90" width="728"><param name="movie" value="http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/biomed/House-SE-biodatamining-LB/BioData_Mining_Leaderboard_v2.swf/1272555148?clickTAG=http://oas.biomedcentral.com/5c/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/L43/1238072094/Top/biomed/House-SE-biodatamining-LB/House-SE-biodatamining-LB.html/32506d4b446b764f387a6341446f3736"><param name="quality" value="high"><param name="wmode" value="window"><param name="AllowScriptAccess" value="always"><embed src="bmcBioinformatics_test_files/1272555148" quality="high" wmode="window" swliveconnect="FALSE" name="OAS_RMF_Top_FLASH" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" alt="" align="" height="90" width="728"></object>
+
+<noscript>
+<A HREF="http://oas.biomedcentral.com/5c/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/L43/1238072094/Top/biomed/House-SE-biodatamining-LB/House-SE-biodatamining-LB.html/32506d4b446b764f387a6341446f3736" TARGET="_blank"><IMG SRC="http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/biomed/House-SE-biodatamining-LB/BioData_Mining_Leaderboard_v2.gif/1272555148" WIDTH='728' HEIGHT='90' BORDER=0 ALT=""></a>
+</noscript>
+
+
+<!-- OAS AD 'Top' end -->
+</dd>
+
+</dl>
+
+
+<noscript>
+
+<dl class="google-ad wide noscript">
+  
+    <dt class="hide"></dt>
+  
+    
+    <dd>
+        <a href="http://oas.biomedcentral.com/RealMedia/ads/click_nx.ads/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/17978560714@Top?">
+            <img src="http://oas.biomedcentral.com/RealMedia/ads/adstream_nx.ads/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/19602448827@Top?" alt="advert"/>
+        </a>
+    </dd>
+</dl>
+</noscript>
+        <div class="sup-panel-outer">
+        <div class="sup-panel-inner">
+            <ul id="login" class="login">
+        <li class="greeting"><strong>Welcome <span id="username">University of Louisville</span></strong></li>
+            <li id="loginLink"><a href="http://www.biomedcentral.com/bmcbioinformatics/logon">Log on</a></li>
+    </ul>            <ul class="nav-sup">
+    
+        <li id="BMC" class="current">
+            <a href="http://www.biomedcentral.com/"><span class="img-title">&nbsp;</span>
+            <span class="text-title">BioMed Central</span></a>
+        </li>
+		
+        		<li><a href="http://www.biomedcentral.com/journals"><span>Journals</span></a></li>
+		
+								<li>
+				<a href="http://www.biomedcentral.com/gateways"><span>Gateways</span></a>
+			</li>
+					    	
+</ul>
+        </div>
+    </div>
+    <div class="branding-inner">
+        <h1 class="logo">
+        <a href="http://www.biomedcentral.com/bmcbioinformatics/">
+            <img alt="BMC Bioinformatics" title="BMC Bioinformatics Logo" src="bmcBioinformatics_test_files/logo.gif">
+        </a>
+        </h1>
+
+
+
+                    
+
+        <div id="impact-factor" class="official">
+    <img src="bmcBioinformatics_test_files/official.gif" alt="official impact factor" title="2.75">
+    <span id="impact-factor-value">2.75</span>
+</div>
+    
+                            
+<div class="module search gray small  ">
+    <div class="module-inner padded">
+        <form method="get" class="searchForm" action=" /quickSearchRedirectURL " onsubmit="window.location.href=this['url'].value + '?terms=' + encodeURIComponent(this['terms'].value); return false;">
+            <fieldset class="search">
+			                <span>
+                    Search <select name="url">
+                                <option value="http://www.biomedcentral.com/bmcbioinformatics/search/results" selected="selected">BMC Bioinformatics</option>
+                                <option value=" http://www.biomedcentral.com/search/results">BioMed Central</option>
+                           </select> for
+                </span>
+                            <input style="width: 144px;" id="searchTerms" name="terms" alt="Search terms" class="text " type="text">
+                 <button class="w37" value="Go" type="submit">Go</button>
+            </fieldset>
+        </form>
+    </div>
+	<a class="advanced-search" href="http://www.biomedcentral.com/bmcbioinformatics/search">Advanced search</a>
+</div>                         <ul class="primary-nav">
+	<li><a href="http://www.biomedcentral.com/bmcbioinformatics/"><span id="home-tab">Home</span></a></li>
+										<li class="current"><a href="http://www.biomedcentral.com/bmcbioinformatics/content"><span id="articles-tab" "="">Articles</span></a></li>
+							
+	
+
+	
+            <li><a href="http://www.biomedcentral.com/bmcbioinformatics/authors/instructions"><span id="authors-tab">Authors</span></a></li>
+        <li><a href="http://www.biomedcentral.com/bmcbioinformatics/about/reviewers"><span id="reviewers-tab">Reviewers</span></a></li>
+    		<li><a href="http://www.biomedcentral.com/bmcbioinformatics/about"><span id="about-tab">About this journal</span></a></li>
+	<li><a href="http://www.biomedcentral.com/bmcbioinformatics/my"><span id="my-tab">My BMC Bioinformatics</span></a></li>
+		
+        </ul>            </div>
+</div>
+
+
+<hr class="hide">
+<div class="container">
+	<div id="content" class="overflow-visible">
+			    
+
+
+
+
+
+			
+	
+
+<div class="outline-wrapper block">
+<ul id="box-outline">
+<ul id="outline" class="outline">
+   <li>
+      <a href="#">Top</a>
+   </li>
+   <li>
+      <a href="#abs">Abstract</a>
+   </li>
+   <li>
+      <a href="#sec1">Background</a>
+   </li>
+   <li>
+      <a href="#sec2">Implementation</a>
+   </li>
+   <li>
+      <a href="#sec3">Results and discussion</a>
+   </li>
+   <li>
+      <a href="#sec4">Conclusions</a>
+   </li>
+   <li>
+      <a href="#sec5">Availability and requirements</a>
+   </li>
+   <li>
+      <a href="#sec6">Competing interests</a>
+   </li>
+   <li>
+      <a href="#sec7">Authors’ contributions</a>
+   </li>
+   <li>
+      <a href="#ack">Acknowledgements</a>
+   </li>
+   <li class="lowest">
+      <a href="#refs">References</a>
+   </li>
+</ul>
+</ul>
+<dl id="box-outline1">
+
+<dl style="display: none; height: 0px;" class="google-ad  ">
+        
+                    <dt class="hide"></dt>
+             
+        <dd>
+<!-- OAS AD 'x96' begin -->
+<script type="text/javascript">
+OAS_AD('x96');
+
+</script><a href="http://oas.biomedcentral.com/5c/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/2017448120/x96/default/empty.gif/32506d4b446b764f387a6341446f3736?x" target="_top"><img src="bmcBioinformatics_test_files/empty.gif" alt="" border="0" height="1" width="1"></a>
+<!-- OAS AD 'x96' end -->
+</dd>
+
+</dl>
+
+
+<noscript>
+
+<dl class="google-ad  noscript">
+  
+    <dt class="hide">Advertisement</dt>
+  
+    
+    <dd>
+        <a href="http://oas.biomedcentral.com/RealMedia/ads/click_nx.ads/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/13327953640@x96?">
+            <img src="http://oas.biomedcentral.com/RealMedia/ads/adstream_nx.ads/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/15703917726@x96?" alt="advert"/>
+        </a>
+    </dd>
+</dl>
+</noscript>
+</dl>
+</div>
+
+
+
+<div id="article-navigation-bar">
+    <div class="issue-information block">
+        <h5><a href="http://www.biomedcentral.com/bmcbioinformatics"><strong>BMC Bioinformatics</strong></a></h5>
+        <ul class="square normal">
+            <li><a href="http://www.biomedcentral.com/bmcbioinformatics/content/13">Volume 13</a></li>
+				
+				        </ul>
+    </div>
+    <div class="article-information block" id="article-info">
+        
+
+
+<div id="viewing-options-links">
+	<h5>Viewing options</h5>
+	<ul class="square normal">
+        
+            <li>
+                             <a href="http://www.biomedcentral.com/1471-2105/13/206/abstract">Abstract</a>
+                        </li>
+        				<li>
+							<strong>Full text</strong>
+					</li>
+		
+		
+
+		<li>
+			<a href="http://www.biomedcentral.com/content/pdf/1471-2105-13-206.pdf">PDF</a>
+							(2.6MB)
+					</li>
+
+		<li>
+                    </li>
+
+				<li>
+						<a href="http://www.biomedcentral.com/1471-2105/13/206/additional">Additional files</a>
+					</li>
+			</ul>
+</div>		
+<div id="associated-material-links">
+    <h5>Associated material</h5>
+    <ul class="square normal">
+                        <li>
+            <a href="http://www.biomedcentral.com/pubmed/22901030">PubMed record</a>
+        </li>
+                            <li><a href="http://www.biomedcentral.com/1471-2105/13/206/about">About this article</a></li>
+                <li>
+                        <a href="http://www.biomedcentral.com/1471-2105/13/206/comments">Readers' comments </a>
+                    </li>
+        <li>
+                    </li>
+    </ul>
+</div>
+		
+
+
+
+
+<div id="related-literature-links">
+    <h5>Related literature</h5>
+    <ul class="normal">
+                    <li> <a href="http://www.biomedcentral.com/1471-2105/13/206/about#citations"><h6>Cited by</h6></a></li>
+                <li id="google-blog-search"><a href="http://www.google.com/search?tbm=blg&amp;hl=en&amp;source=hp&amp;biw=1280&amp;bih=899&amp;q=CaPSID%3A+A+bioinformatics+platform+for+computational+pathogen+sequence+identification+in+human+genomes+and+transcriptomes&amp;btnG=Search">on Google blog search</a></li>
+        <h6>Other articles by authors</h6>
+        <li>
+            <a class="collapser"><i>&nbsp;</i>on Google Scholar</a>
+<ul id="authg" class="hidebeforeload">                         <li>
+                <a href="http://scholar.google.com/scholar?q=author%3A%22I+Borozan%22">Borozan I</a>
+            </li>
+                                <li>
+                <a href="http://scholar.google.com/scholar?q=author%3A%22S+Wilson%22">Wilson S</a>
+            </li>
+                                <li>
+                <a href="http://scholar.google.com/scholar?q=author%3A%22P+Blanchette%22">Blanchette P</a>
+            </li>
+                                <li>
+                <a href="http://scholar.google.com/scholar?q=author%3A%22P+Laflamme%22">Laflamme P</a>
+            </li>
+                                <li>
+                <a href="http://scholar.google.com/scholar?q=author%3A%22SN+Watt%22">Watt SN</a>
+            </li>
+                                <li>
+                <a href="http://scholar.google.com/scholar?q=author%3A%22PM+Krzyzanowski%22">Krzyzanowski PM</a>
+            </li>
+                                <li>
+                <a href="http://scholar.google.com/scholar?q=author%3A%22F+Sircoulomb%22">Sircoulomb F</a>
+            </li>
+                                <li>
+                <a href="http://scholar.google.com/scholar?q=author%3A%22R+Rottapel%22">Rottapel R</a>
+            </li>
+                                <li>
+                <a href="http://scholar.google.com/scholar?q=author%3A%22PE+Branton%22">Branton PE</a>
+            </li>
+                                <li>
+                <a href="http://scholar.google.com/scholar?q=author%3A%22V+Ferretti%22">Ferretti V</a>
+            </li>
+            </ul>          </li>
+                <li>
+            		<a class="collapser"><i>&nbsp;</i>on PubMed</a>
+	<ul id="authpm" class="hidebeforeload"> 									<li><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Borozan_I%20[Author]">Borozan I</a>
+				</li>
+												<li><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Wilson_S%20[Author]">Wilson S</a>
+				</li>
+												<li><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Blanchette_P%20[Author]">Blanchette P</a>
+				</li>
+												<li><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Laflamme_P%20[Author]">Laflamme P</a>
+				</li>
+												<li><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Watt_SN%20[Author]">Watt SN</a>
+				</li>
+												<li><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Krzyzanowski_PM%20[Author]">Krzyzanowski PM</a>
+				</li>
+												<li><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Sircoulomb_F%20[Author]">Sircoulomb F</a>
+				</li>
+												<li><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Rottapel_R%20[Author]">Rottapel R</a>
+				</li>
+												<li><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Branton_PE%20[Author]">Branton PE</a>
+				</li>
+												<li><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Ferretti_V%20[Author]">Ferretti V</a>
+				</li>
+						</ul> 	        </li>
+    </ul>     <h6>Related articles/pages</h6>
+    <ul class="square normal">
+        <li><a href="http://www.google.co.uk/search?hl=en&amp;q=related:http://www.biomedcentral.com/1471-2105/13/206">on Google</a></li>
+        <li><a href="http://scholar.google.com/scholar?q=related:http://www.biomedcentral.com/1471-2105/13/206">on Google Scholar</a></li>
+                    <li><a href="http://www.biomedcentral.com/pubmed/related/22901030">on PubMed</a></li>
+            </ul>
+
+</div>		
+        
+    
+    
+
+
+    	
+
+
+
+
+
+<h5>Tools</h5>
+	<ul class="square normal">
+									<li>
+						<a href="http://www.biomedcentral.com/1471-2105/13/206/citation">Download references</a>
+					</li>
+				<li><a href="http://www.biomedcentral.com/content/download/xml/1471-2105-13-206.xml">Download XML</a></li>
+				<li>
+						<a href="http://www.biomedcentral.com/1471-2105/13/206/email">Email to a friend</a>
+					</li>
+		<li><a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&amp;page=0&amp;journal=456&amp;doi=10.1186/1471-2105-13-206&amp;volume=13&amp;issue=1&amp;title=CaPSID%3A+A+bioinformatics+platform+for+computational+pathogen+sequence+identification+in+human+genomes+and+transcriptomes&amp;author_name=Ivan%20Borozan&amp;start_page=1&amp;end_page=11">Order reprints</a></li>
+		<li>
+						<a href="http://www.biomedcentral.com/1471-2105/13/206/postcomment">Post a comment</a>
+					</li>
+	</ul>
+		
+
+
+<h5>Share this article</h5>
+<ul id="social-networking-links">
+	<li>
+	<div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://www.biomedcentral.com/1471-2105/13/206" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-action="recommend"><span style="height: 19px; width: 112px;"><iframe src="bmcBioinformatics_test_files/like.htm" class="fb_ltr " title="Like this content on Facebook." style="border: medium none; overflow: hidden; height: 19px; width: 112px;" name="f931ea13658364" id="f8417be0e52e4e" scrolling="no"></iframe></span></div>
+	</li>
+	
+	<li>
+		<iframe data-twttr-rendered="true" title="Twitter Tweet Button" style="width: 107px; height: 20px;" class="twitter-share-button twitter-count-horizontal" src="bmcBioinformatics_test_files/tweet_button.htm" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+	</li>
+	<li>
+			<div id="___plusone_0" style="height: 20px; width: 90px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline;"><iframe title="+1" src="bmcBioinformatics_test_files/fastbutton.htm" name="I0_1347365405303" id="I0_1347365405303" vspace="0" tabindex="0" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" marginwidth="0" marginheight="0" hspace="0" allowtransparency="true" frameborder="0" scrolling="no" width="100%"></iframe></div>
+	</li>
+	<li>
+		<a class="sharethis_title btn" href="#"><span class="icon">&nbsp;</span>More options...</a>
+	<ul class="iconlist hidebeforeload" id="sharethis">
+			<li>
+				<a onclick="largepopup(this.href,'citeulike_popup_post',800,600);return false" href="http://www.citeulike.org/posturl?url=http://www.biomedcentral.com/1471-2105/13/206"><span class="share-icons citeulike"></span>Citeulike</a>
+			</li>
+					<li>
+					<a href="http://www.connotea.org/addpopup?continue=confirm&amp;uri=http://dx.doi.org/doi:10.1186/1471-2105-13-206" onclick="largepopup(this.href,'Connotea',800,600);return false"><span class="share-icons connotea"></span>Connotea</a>
+	</li>
+				<li>
+				<a onclick="largepopup(this.href,'Del.icio.us',800,600);return false" href="http://del.icio.us/post?url=http://www.biomedcentral.com/1471-2105/13/206&amp;title=CaPSID:%20A%20bioinformatics%20platform%20for%20computational%20pathogen%20sequence%20identification%20in%20human%20genomes%20and%20transcriptomes"><span class="share-icons delicious"></span>Del.icio.us</a>
+	</li>
+			<li>
+				<a href="http://www.biomedcentral.com/1471-2105/13/206/email"><span class="share-icons email"></span>Email</a>
+	</li>
+			<li>
+				<a onclick="largepopup(this.href,'facebook',800,600);return false" href="http://www.facebook.com/sharer.php?u=http://www.biomedcentral.com/1471-2105/13/206"><span class="share-icons facebook"></span>Facebook</a>
+	</li>
+	<li class="gp">
+			<div class="googlehider"> 
+				<div id="___plusone_1" style="height: 24px; width: 38px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline;"><iframe title="+1" src="bmcBioinformatics_test_files/fastbutton_002.htm" name="I1_1347365405306" id="I1_1347365405306" vspace="0" tabindex="0" style="position: static; top: 0px; width: 38px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" marginwidth="0" marginheight="0" hspace="0" allowtransparency="true" frameborder="0" scrolling="no" width="100%"></iframe></div>
+			</div>
+				<span class="share-icons googleplus"></span>
+				<div class="googlehider2"> 
+				<div id="___plusone_2" style="height: 24px; width: 38px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline;"><iframe title="+1" src="bmcBioinformatics_test_files/fastbutton_003.htm" name="I2_1347365405309" id="I2_1347365405309" vspace="0" tabindex="0" style="position: static; top: 0px; width: 38px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" marginwidth="0" marginheight="0" hspace="0" allowtransparency="true" frameborder="0" scrolling="no" width="100%"></iframe></div>
+			</div>
+				<span class="share-icons googleplus"></span>
+				<span class="gp-link"><a href="#">Google+</a></span>
+	</li>
+			<li>
+				<a onclick="largepopup(this.href,'mendeley',800,600);return false" href="http://www.mendeley.com/import/?url=http://www.biomedcentral.com/1471-2105/13/206"><span class="share-icons mendeley"></span>Mendeley</a>
+			</li>
+			<li>
+				<a onclick="largepopup(this.href,'twitter',800,600);return false" href="http://twitter.com/?status=%23bmcbioinformatics%0D%0ACaPSID%3A%20A%20bioinformatics%20platform%20for%20computational%20pathogen%20sequence%20identification%20in%20human%20genomes%20and%20transcriptomes%20http%3A%2F%2Fwww.biomedcentral.com%2F1471-2105%2F13%2F206"><span class="share-icons twitter"></span>Twitter</a>  
+			</li>
+		</ul>
+</li></ul>    </div>
+
+    
+</div>
+
+<div class="rounded custom white article full-text">
+    <div class="t png_bg">
+        <div class="r png_bg"></div>
+    </div>
+    <div class="m">
+    <div class="r">
+        <div class="wrap-inner content">
+                    <div class="padded-inner">
+                            
+
+
+<div id="topmatter">
+	
+	   
+
+
+
+
+
+
+
+ 
+				<a href="http://www.biomedcentral.com/about/access"><img alt="Open Access" src="bmcBioinformatics_test_files/openaccess-large.png" class="access mr15"></a>
+			<a href="http://www.biomedcentral.com/about/mostviewed/"><img alt="Highly Accessed" src="bmcBioinformatics_test_files/highlyaccessed-large.png" class="access mr15"></a>
+				<span class="articletype">Software</span>
+<h1>CaPSID: A bioinformatics platform for computational pathogen sequence identification in human genomes and transcriptomes</h1>
+
+        
+			<div class="multipleins">
+		
+	<p class="authors">
+        																																																																
+																																																																								
+																																																																								
+																																																																								
+																																									        <strong>Ivan Borozan</strong><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins1">1</a></sup>, <strong>Shane Wilson</strong><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins1">1</a></sup>, <strong>Paola Blanchette</strong><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins3">3</a></sup>, <strong>Philippe Laflamme</strong><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins1">1</a></sup>, <strong>Stuart N Watt</strong><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins1">1</a></sup>, <strong>Paul M Krzyzanowski</strong><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins2">2</a></sup>, <strong>Fabrice Sircoulomb</strong><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins2">2</a></sup>, <strong>Robert Rottapel</strong><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins2">2</a></sup>, <strong>Philip E Branton</strong><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins3">3</a>,</sup><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins4">4</a>,</sup><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins5">5</a></sup> and <strong>Vincent Ferretti</strong><sup><a href="http://www.biomedcentral.com/1471-2105/13/206/#ins1">1</a></sup><sup>*</sup>	</p>
+
+			<div id="affiliations">
+		            <div class="module gray  inner">
+                <div class="module-inner padded-inner">
+		<ul>
+			<li>                                                                 
+                                                                   
+                            		<p>
+							<span>*</span>
+									 Corresponding author:										            Vincent Ferretti <a href="mailto:Vincent.Ferretti@oicr.on.ca">Vincent.Ferretti@oicr.on.ca</a>    					</p>
+      
+</li>
+			
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+        		</ul>
+		 
+		
+             
+							<p class="options"><a class="affiliations-toggle" href="#"><i class="arrow"></i>Author Affiliations</a></p>
+				<div id="ins_container" style="display: block;">
+										    						    <p>
+						        <sup id="ins1">1</sup>                                
+Ontario Institute for Cancer Research, MaRS Centre, , South Tower, 101 
+College Street, Suite 800, Toronto, Ontario M5G 0A3, Canada
+                            </p>
+																    						    <p>
+						        <sup id="ins2">2</sup>                                
+Ontario Cancer Institute and the Campbell Family Cancer Research 
+Institute, Toronto Medical Discovery Tower, University of Toronto, 101 
+College Street, Rm 8-703, Toronto, Ontario M5G 1L7, Canada
+                            </p>
+																    						    <p>
+						        <sup id="ins3">3</sup>                                
+Department of Biochemistry, McGill University, McIntyre Medical 
+Building, 3655 Promenade Sir William Osler, Montreal, Quebec H3G 1Y6, 
+Canada
+                            </p>
+																    						    <p>
+						        <sup id="ins4">4</sup>                                
+Department of Oncology, McGill University, McIntyre Medical Building, 
+3655 Promenade Sir William Osler, Montreal, Quebec H3G 1Y6, Canada
+                            </p>
+																    						    <p>
+						        <sup id="ins5">5</sup>                                The 
+Goodman Cancer Research Centre, McGill University, McIntyre Medical 
+Building, 3655 Promenade Sir William Osler, Montreal, Quebec H3G 1Y6, 
+Canada
+                            </p>
+																
+				</div>
+										<p id="authoremails">            For all author emails, please <a href="http://www.biomedcentral.com/bmcbioinformatics/logon">log on</a>.
+    </p>
+						
+				                </div>
+                    <div class="module-tl"></div>
+                    <div class="module-tr"></div>
+                    <div class="module-bl"></div>
+                    <div class="module-br"></div>
+            </div>
+		</div>
+	  </div>
+  
+				
+    <p><em>BMC Bioinformatics</em> 2012, <strong>13</strong>:206&nbsp;<span class="pseudotab">doi:10.1186/1471-2105-13-206</span></p>	
+		
+    
+    		
+        		<br>
+		<p>The electronic version of this article is the complete one and can be found online at: <a href="http://www.biomedcentral.com/1471-2105/13/206">http://www.biomedcentral.com/1471-2105/13/206</a></p>
+		<br>
+                    <table cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr><td>Received:</td><td>1 February 2012</td></tr>                <tr><td>Accepted:</td><td>18 July 2012</td></tr>        <tr><td>Published:</td><td>17 August 2012</td></tr>        </tbody>
+        </table>
+    		<br>
+        <p>
+            © 2012 Borozan et al.; licensee BioMed Central Ltd. <br>
+        </p>
+					<p>
+				This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<a href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</a>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+			</p>
+		    
+
+</div>
+    			
+    <script type="text/javascript" src="bmcBioinformatics_test_files/MathJax.js"></script><script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({ menuSettings: {zoom: "Click"}, "NativeMML": { scale: 115} ,  "HTML-CSS": { scale: 95} });
+</script><script>
+function validate()
+{
+	
+	if(document.forms['maths'].elements['fmt_math_check'].checked) {document.forms['maths'].elements['fmt_math'].value='yes';}
+	document.forms['maths'].submit();
+}
+</script><script type="text/javascript" src="bmcBioinformatics_test_files/altimage.js"></script><style type="text/css">
+.math-ml, .math-block {text-align:center;width:98%;font-size:105%;}
+.math-block  {display:block;margin:0px;padding:0px;}
+.inline-math {font-size:98%;padding-left:0.2%;padding-right:0.2%;}
+.maketag {display:none}
+.alt-image {border:solid 1px lightgray;padding:0.6%;margin-top:0.6%}
+center a {font-size:90%;}
+</style><noscript style="display:none"><style type="text/css">
+.math-block { display:none; text-align:center;width:98%;margin:0px}
+.inline-math {display:none}
+</style></noscript><span style="display:table-cell;vertical-align:center;padding:0;margin:0;float:right;position:relative;top:1.8em;left:0.8em;width:24.9em;line-height:1.4em;">
+   <form name="maths" method="get" style="float:right"><label for="math" style="margin-right:0.4em;position:relative;top:-0.2em">Formula display:</label><input name="fmt_math" value="no" type="hidden"><input id="math" style="position:relative;left:0.1em" onclick="javascript:if(document.forms['maths'].elements['fmt_math_check'].checked) document.forms['maths'].elements['fmt_math'].value='yes'; document.forms['maths'].submit();" name="fmt_math_check" checked="checked" type="checkbox"><label for="math" style="margin-left:4px;position:relative;top:.1em"><img src="bmcBioinformatics_test_files/mathjax.png" style=""></label><a title="Mathematical formulae have been encoded as MathML and are displayed in this HTML version using MathJax in order to improve their display. Uncheck the box to turn MathJax off. This feature requires Javascript. For more information click on this button." href="http://www.biomedcentral.com/about/mathjax"><span style="width:19px;height:18px;position:relative;top:0.4em;margin-left:0.4em;background-position-y: -80px;background-position-x: 273px;" class="help-icon"></span></a></form></span><a name="abs"></a><h3>Abstract</h3>
+<h4>Background</h4>
+<p style="line-height:160%">It is now well established that nearly 20% of human cancers are caused by infectious
+   agents, and the list of human oncogenic pathogens will grow in the future for a variety
+   of cancer types. Whole tumor transcriptome and genome sequencing by next-generation
+   sequencing technologies presents an unparalleled opportunity for pathogen detection
+   and discovery in human tissues but requires development of new genome-wide bioinformatics
+   tools.
+</p>
+<h4>Results</h4>
+<p style="line-height:160%">Here we present CaPSID (Computational Pathogen Sequence IDentification), a comprehensive
+   bioinformatics platform for identifying, querying and visualizing both exogenous and
+   endogenous pathogen nucleotide sequences in tumor genomes and transcriptomes. CaPSID
+   includes a scalable, high performance database for data storage and a web application
+   that integrates the genome browser JBrowse. CaPSID also provides useful metrics for
+   sequence analysis of pre-aligned BAM files, such as gene and genome coverage, and
+   is optimized to run efficiently on multiprocessor computers with low memory usage.
+</p>
+<h4>Conclusions</h4>
+<p style="line-height:160%">To demonstrate the usefulness and efficiency of CaPSID, we carried out a comprehensive
+   analysis of both a simulated dataset and transcriptome samples from ovarian cancer.
+   CaPSID correctly identified all of the human and pathogen sequences in the simulated
+   dataset, while in the ovarian dataset CaPSID’s predictions were successfully validated
+   in vitro.
+</p><a name="sec1"></a><h3>Background</h3>
+<p style="line-height:160%">Specific viruses have been proved to be etiologic agents of human cancer and cause
+   15% to 20% of all human tumors worldwide <a name="d8149e209"></a>[<a onclick="LoadInParent('#B1'); return false;" href="#B1">1</a>]. Moreover, epidemiological studies indicate that new oncogenic pathogens are yet
+   to be discovered <a name="d8149e213"></a>[<a onclick="LoadInParent('#B2'); return false;" href="#B2">2</a>]. The International Cancer Genome Consortium (ICGC) <a name="d8149e217"></a>[<a onclick="LoadInParent('#B3'); return false;" href="#B3">3</a>], which intends to study 25 000 tumors belonging to 50 different types of cancer using
+   next generation sequencing technologies, will allow for the first time an in-depth
+   analysis of the viral sequence content of thousands of complete human tumor genomes
+   and transcriptomes. This represents a unique opportunity for the identification of
+   new tumor-associated human pathogens.
+</p>
+<p style="line-height:160%">However, this opportunity can be fully realized only in conjunction with the development
+   of new genome-wide bioinformatics tools. In this context, several computational approaches
+   have already been developed and successfully applied for the discovery and detection
+   of known and new pathogens in tumor samples <a name="d8149e223"></a><a name="d8149e225"></a><a name="d8149e227"></a><a name="d8149e229"></a><a name="d8149e231"></a><a name="d8149e233"></a>[<a onclick="LoadInParent('#B4'); return false;" href="#B4">4</a>-<a onclick="LoadInParent('#B9'); return false;" href="#B9">9</a>]. We present here CaPSID, a comprehensive open source platform which integrates fast
+   and memory-efficient computational pipeline for pathogen sequence identification and
+   characterization in human genomes and transcriptomes together with a scalable results
+   database and an easy-to-use web-based software application for managing, querying
+   and visualizing results.
+</p><a name="sec2"></a><h3>Implementation</h3>
+<p style="line-height:160%">CaPSID implements an improved form of a computational approach known as “digital subtraction”
+   <a name="d8149e243"></a>[<a onclick="LoadInParent('#B10'); return false;" href="#B10">10</a>] that consists of subtracting in silico known human short read sequences from human
+   transcriptome (or genome) samples, leaving candidate non-human sequences to be aligned
+   against known pathogen reference sequences. CaPSID differs from traditional digital
+   subtraction (e.g., <a name="d8149e247"></a>[<a onclick="LoadInParent('#B8'); return false;" href="#B8">8</a>]), which is used as a filter, eliminating human sequences from the dataset before
+   comparison with pathogen reference sequences. By contrast, CaPSID matches reads against
+   both human and pathogen reference sequences, dividing the reads into three disjoint
+   sets per sample: a set that aligns to pathogen sequences, a set that aligns to both
+   human and pathogen sequences, and a set that does not align to either human or pathogen
+   sequences. This three-way division forms the basis for an exploratory environment
+   for both known and unknown pathogen research.
+</p>
+<p style="line-height:160%">As shown in Figure <a name="d8149e252"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F1','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F1">1</a>, CaPSID consists of three linked components: 
+</p>
+<p style="line-height:160%" class="xfullindent1">· A pipeline to analyze and maintain sequencing datasets</p>
+<p style="line-height:160%" class="xfullindent1">· A database which stores reference samples and analysis results</p>
+<p style="line-height:160%" class="xfullindent1">· An interactive interface to browse, search, and explore identified candidate pathogen
+   data
+</p><div class="figs">
+<div class="fig"><p><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F1','F1',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F1"><img src="bmcBioinformatics_test_files/1471-2105-13-206-1.gif" alt="thumbnail" class="thumbnail" align="top"><strong>Figure 1.</strong></a> <strong>CaPSID platform.</strong> The CaPSID platform is made of three components: A computational pipeline written
+   in Python for executing digital subtraction, a core MongoDB database for storing reference
+   sequences and alignment results, and a web application in Grails for visualizing and
+   querying the data.
+</p></div></div>
+<h4>The CaPSID Pipeline</h4>
+<p style="line-height:160%">The CaPSID pipeline is a suite of command-line tools written in Python designed to
+   identify, through digital subtraction, non-human nucleotide sequences in short read
+   datasets generated by deep sequencing of RNA or DNA tumor samples.
+</p>
+<p style="line-height:160%">The pipeline can be conceptually divided in two distinct modules. The first module,
+   called the Genomes Module, provides users with tools to create and update the in-house
+   reference sequence database required by CaPSID for applying the digital subtraction.
+   It uses BioPython <a name="d8149e283"></a>[<a onclick="LoadInParent('#B11'); return false;" href="#B11">11</a>] to efficiently parse GenBank files and loads whole genome reference sequences, as
+   well as some of their annotations (e.g. gene and CDS locations), into CaPSID’s database.
+   Our database contains complete sets of human (GRCh37/hg19), viral (4015), microbial
+   (bacterial and archaea) (38035), and fungal (53098) genomes (as of December 2011)
+   from UCSC <a name="d8149e287"></a>[<a onclick="LoadInParent('#B12'); return false;" href="#B12">12</a>] and NCBI <a name="d8149e291"></a>[<a onclick="LoadInParent('#B13'); return false;" href="#B13">13</a>]. This module also provides the tools to create customized reference sequence FASTA
+   files needed by short read sequence alignment software.
+</p>
+<p style="line-height:160%">The second module, called the Analysis Module (see Figure <a name="d8149e296"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F1','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F1">1</a>), is responsible for executing the digital subtraction and for analyzing its results.
+   It requires two BAM files as input for each sequenced sample to be analyzed: one containing
+   the short read alignment results to the human reference sequences (HRS) and one containing
+   the alignment results to all the pathogen reference sequences (PRS) found in the CaPSID
+   database.
+</p>
+<p style="line-height:160%">CaPSID can directly process BAM files containing header lines formatted according
+   to NCBI FASTA specification. In order to produce BAM files that can be loaded into
+   CaPSID, a user can also export genome reference files from CaPSID for passing to the
+   short read aligner. Before processing the BAM files, the user can specify a minimum
+   required MAPQ score and all aligned reads that fall below that value will be removed
+   from the analysis. CaPSID can process BAM files containing either single-end or pair-end
+   reads and will automatically determine which analysis method is appropriate. Digital
+   subtraction is not limited to a human reference sequence and can be executed with
+   any host organism as long as its reference sequence has been loaded into the database.
+</p>
+<p style="line-height:160%">In theory, any short read alignment program - as long as it produces BAM files– is
+   suitable for CaPSID. However, one restriction applies, namely that multiple alignment
+   locations for individual reads must be reported as they can map to more than one pathogen
+   genome. We selected Novoalign (Novocraft Technologies <a name="d8149e304"></a>[<a onclick="LoadInParent('#B14'); return false;" href="#B14">14</a>]) for its flexibility (allows both mismatches and gaps), accuracy and speed. For ABI
+   SOLiD sequencing data, we chose to use BioScope (Applied Biosystems). Both of these
+   aligners are commercial programs with costly licences. However there are freely available
+   and open source alternatives such as the recently released Bowtie 2 <a name="d8149e308"></a>[<a onclick="LoadInParent('#B15'); return false;" href="#B15">15</a>] (also allowing both mismatches and gaps) and SHRiMP2 <a name="d8149e312"></a>[<a onclick="LoadInParent('#B16'); return false;" href="#B16">16</a>].
+</p>
+<p style="line-height:160%">As output, CaPSID’s digital subtraction implementation produces three disjoint sets
+   of short reads (or records) per sample: a set that aligns to any of the PRS, a set
+   that aligns to both HRS and PRS and a set of reads that does not align to any of the
+   reference sequences (both human and pathogens).
+</p>
+<p style="line-height:160%">In Algorithm 1 we outline the digital subtraction method used by CaPSID, and how the
+   three disjoint sets are constructed. CaPSID uses the pysam Python module to read and
+   process aligned short read sequences from two input BAM files (<em>LHRS</em> and <em>LNHRS</em> are read from the same BAM file, in two passes). The algorithm first processes alignment
+   information for each read that maps to the PRS and stores it to the CaPSID’s database
+   (lines 1 to 3). Next, the algorithm processes alignment information for reads that
+   map to HRS, storing it into CaPSID if the same read identifier also maps to the PRS
+   (lines 4 to 8). To avoid memory performance problems, <em>LHRS</em>, which may be very large, is processed sequentially. Finally, with another pass through
+   the same BAM file, this time selecting reads that do not align to the human reference
+   sequence, CaPSID identifies unknown reads when they also do not map to the PRS by
+   testing against an in-memory indexed copy of <em>LPRS</em>, which is expected to be relatively small (lines 9 to 13).
+</p>
+<h4>Algorithm 1 CapSID’s digital subtraction method</h4>
+<p style="line-height:160%"><strong>Require:</strong> input <em>LPRS</em> - list of reads that align to the pathogen reference sequence<strong>Require:</strong> input <em>LHRS</em> - list of reads that align to the human reference sequence<strong>Require:</strong> input <em>LNHRS</em> - list of reads that do not align to the human reference sequence 
+</p>
+<p style="line-height:160%" class="xfullindent1">1: for eachitem in LPRSdo</p>
+<p style="line-height:160%" class="xfullindent1">2: additemtoPATHOGENSTORE</p>
+<p style="line-height:160%" class="xfullindent1">3: end for</p>
+<p style="line-height:160%" class="xfullindent1">4: for eachitem in LHRSdo</p>
+<p style="line-height:160%" class="xfullindent1">5: ifiteminPATHOGENSTOREthen</p>
+<p style="line-height:160%" class="xfullindent1">6: additemtoHUMANSTORE</p>
+<p style="line-height:160%" class="xfullindent1">7: end if</p>
+<p style="line-height:160%" class="xfullindent1">8: end for</p>
+<p style="line-height:160%" class="xfullindent1">9: for eachiteminLNHRSdo</p>
+<p style="line-height:160%" class="xfullindent1">10: ifitemis not inLPRSthen</p>
+<p style="line-height:160%" class="xfullindent1">11: additemtofile(FASTQ)</p>
+<p style="line-height:160%" class="xfullindent1">12: end if</p>
+<p style="line-height:160%" class="xfullindent1">13: end for</p>
+<p style="line-height:160%">To better evaluate the significance of the findings, the Analysis Module calculates
+   four different metrics for each sample and for each project as a whole (defined as
+   a collection of samples): <em>(i)</em> the total number of aligned reads (or hits) across any given pathogen genome, <em>(ii)</em> the total number of hits across genes only within a pathogen genome, <em>(iii)</em> the total coverage across each pathogen genome and <em>(iv)</em> the maximum coverage across any of the genes in a given pathogen genome. Here we
+   define coverage as the number of genome nucleotides represented in aligned reads normalized
+   by the genome length. Code that calculates the four metrics for each sample has been
+   parallelized to run on multiple processors in order to make these calculations over
+   samples faster.
+</p>
+<p style="line-height:160%">In addition to the Genome and Analysis Modules, CaPSID includes a command-line script
+   for manipulating FASTQ files that allows the filtering of low quality reads and the
+   removal of duplicates before alignment to reference sequences. The filtering is based
+   on two parameters set by the user, the Phred quality threshold and the number of base
+   pairs allowed below that threshold.
+</p>
+<p style="line-height:160%">Processing digital subtraction and calculating metrics on two BAM files of 34 GB and
+   31 GB respectively takes approximately 15 minutes when using 5 GB of RAM on a 16-core
+   AMD 64-bit processor.
+</p>
+<h4>The CaPSID Database</h4>
+<p style="line-height:160%">One of the main unique features of CaPSID is that reference sequences and digital
+   subtraction results are both stored as linked data in MongoDB, a scalable, high-performance,
+   open source document-oriented database <a name="d8149e406"></a>[<a onclick="LoadInParent('#B17'); return false;" href="#B17">17</a>].
+</p>
+<p style="line-height:160%">The CaPSID database records information on each read identified by the pipeline as
+   part of the two first output sets described above, namely on each read that aligns
+   to either the PRS alone, or to both the HRS and the PRS. The stored fields include,
+   for example, alignment location, length, score, average base qualities, alignment
+   sequence, CIGAR (Compact Idiosyncratic Gapped Alignment Report) information, number
+   of mismatches and whether the read aligns to HRS. Storing both genome and read data
+   makes it possible to run analysis quickly over known gene locations to determine which
+   reads are aligning over gene regions. The third output set of reads identified by
+   the pipeline (reads which do not align to any of the reference sequences) is not stored
+   in the database but is rather saved in FASTQ format to the local file system for further
+   processing.
+</p>
+<p style="line-height:160%">Next generation sequencing produces large amount of data and because CaPSID stores
+   information about each aligned read and each reference sequence, it needs to deal
+   effectively with large data sizes. CaPSID uses MongoDB <a name="d8149e414"></a>[<a onclick="LoadInParent('#B17'); return false;" href="#B17">17</a>], a database software that scales horizontally by sharding the database across a cluster
+   of servers, while still enabling fast retrieval of large volume of data. Thanks to
+   this scalable architecture, there is virtually no limit as to how many reads or experiments
+   CaPSID can store in its database. MongoDB reports <a name="d8149e418"></a>[<a onclick="LoadInParent('#B17'); return false;" href="#B17">17</a>] examples of highly accessed production systems with more than 3.5 TB more than 3.5
+   TB and over 20 billion records. MongoDB also provides the safety of having no single
+   point of failure, as well as distributing both the processing load and data storage
+   requirements. We tested CaPSID on a single node with more that 25 million read records
+   from 113 different transcriptomes samples without significant drop in its performance.
+   Another advantage of using MongoDB is that it offers API access to a number of programming
+   languages (such as R, Python, Java and more) which, depending on users’ needs, allow
+   a broad range of custom type data analysis.
+</p>
+<p style="line-height:160%">CaPSID allows also users to store meta-information about each project (defined as
+   a set of samples) and sample. For example, the user can specify the type of disease,
+   the type of cell and sample source together with alignment information (such as the
+   aligner used, sequencing platform, type of sequencing and the location of BAM files)
+   for each sample to be processed.
+</p>
+<p style="line-height:160%">This database is a key component of the CaPSID platform since it allows users to store,
+   organize and analyze the relevant information from individual samples (derived from
+   the BAM files) in a simple and seamless way, without the burden of manipulating them
+   programmatically.
+</p>
+<h4>The CaPSID Web Application</h4>
+<p style="line-height:160%">After digital subtraction, CaPSID’s web interface enables research attention to be
+   focused on those parts of the sequencing datasets that match the pathogen reference
+   sequences. Its aim is to provide researchers with a rich and interactive interface
+   to manage, query and visualize project results stored in the database. For example,
+   it allows users to search for a specific pathogen and view its statistics across multiple
+   samples or to display sortable tables of coverage statistics for any sample or project
+   (see Figure <a name="d8149e431"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F2','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F2">2</a>). CaPSID also lets users rank genome hits in a given sample or project by using any
+   of the four metrics described above. CaPSID integrates the genome browser JBrowse
+   <a name="d8149e435"></a>[<a onclick="LoadInParent('#B18'); return false;" href="#B18">18</a>] to allow, in a simple mouse click, visualizing and analyzing the distribution of
+   read alignments from one or many samples of a given pathogen genome and its genes
+   (see Figure <a name="d8149e438"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F3','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F3">3</a>). The browser can also differentiate between reads that align PRS only and those
+   that align to both HRS and PRS, allowing users to quickly see which proportion of
+   reads also align to a reference sequence.
+</p><div class="figs">
+<div class="fig"><p><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F2','F2',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F2"><img src="bmcBioinformatics_test_files/1471-2105-13-206-2.gif" alt="thumbnail" class="thumbnail" align="top"><strong>Figure 2.</strong></a> <strong>Shows sortable tables of coverage statistics for a sample displayed by CaPSID.</strong></p></div>
+<div class="fig"><p><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F3','F3',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F3"><img src="bmcBioinformatics_test_files/1471-2105-13-206-3.gif" alt="thumbnail" class="thumbnail" align="top"><strong>Figure 3.</strong></a> <strong>CaPSID’s integrated genome browser JBrowse.</strong> CaPSID’s integrated genome browser JBrowse, displaying the distribution of read alignments
+   from different samples for a given genome (reads aligning simultaneously to the human
+   reference are shown in red).
+</p></div></div>
+<p style="line-height:160%">CaPSID was designed to be used as a platform for large collaborative projects, such
+   as those between laboratories, and functions as a centralized repository of information.
+   Separating the interface from the analysis pipeline is central to this, as it enables
+   those without direct experience of high-throughput sequencing systems to participate
+   in expert judgements on the digitally subtracted sample datasets.
+</p>
+<p style="line-height:160%">To enable this, projects in CaPSID are defined as a collection of samples and allow
+   for fine-grained control over user access levels. There are three levels of access
+   to a project: users, collaborators and owners. Users have read-only access to projects,
+   collaborators have permission to add, edit and remove samples and owners have full
+   access to the project, which includes the ability to give permission for others users
+   to access the project, and to remove the project and all associated data entirely
+   from the platform. In addition to specific user level access, projects on the platform
+   can be made public, giving all CaPSID users read-access to the samples.
+</p>
+<p style="line-height:160%">The CaPSID web application is written in Groovy using the Grails web framework, and
+   allows user authentication and authorization data to be defined in the CaPSID database,
+   an LDAP server or a combination of the two. For example, specific user permissions
+   can be stored in the CaPSID database, while login credentials come from an external
+   LDAP server. This gives full project control to the CaPSID administrators, while still
+   keeping the centralized access control of an LDAP server.
+</p>
+<h4>CaPSID’s manual and documentation</h4>
+<p style="line-height:160%">We have provided comprehensive documentation for installing and using CaPSID, complete
+   with a step by step tutorial that takes users from creating a project and loading
+   sequencing data, to analyzing and visualizing aligned reads across pathogen genomes.
+   The full documentation is available at <a href="https://github.com/capsid/capsid/wiki">https://github.com/capsid/capsid/wiki</a> <a href="http://www.webcitation.org/query.php?url=https://github.com/capsid/capsid/wiki&amp;refdoi=10.1186/1471-2105-13-206" alt="" title="Archive copy of webpage" class="xpushbutton">webcite</a>.
+</p><a name="sec3"></a><h3>Results and discussion</h3>
+<h4>Analyzing sequencing data using CaPSID</h4>
+<h4>Testing CaPSID pipeline accuracy</h4>
+<p style="line-height:160%">In order to assess our pipeline and its efficiency to subtract human sequences and
+   detect pathogen ones, we have created a dataset by combining short read sequences
+   from a real human transcriptome sample (publicly available from dbGAP) with sequences
+   simulated at random from 10 viral reference genomes. The publicly available dataset
+   consists of 9 million single-end reads (with read length of 65 base pairs) sequenced
+   from a normal human tissue. We found that 97.3% of reads aligned to the human genome
+   and 0.08% (7241) to viral genomes.
+</p>
+<p style="line-height:160%">The simulated dataset consisted of 10000 65-mers randomly generated from 10 viral
+   genomes, and 270 reads known to map to both viral and human genomes. The 270 reads
+   were not simulated but selected from one of our own sequenced dataset that has been
+   previously aligned to both the HRS and PRS.
+</p>
+<p style="line-height:160%">We note that the Novoalign algorithm, before it attempts to align short reads, filters
+   those that have low quality and low complexity by default. For users who want to use
+   other short read aligners that do not include filtering options, CaPSID offers a way
+   of filtering short reads with low quality prior to the alignment (see the CaPSID’s
+   pipeline section). Users should choose their filtering criteria with care as too stringent
+   filtering could eliminate too many reads and produce a drop in sensitivity in detecting
+   viral genomes.
+</p>
+<p style="line-height:160%">The two datasets (human and simulated) were combined into one single FASTQ file and
+   all short reads were then aligned to the human and viral reference sequences using
+   Novoalign. The two BAM files produced from the alignment step were then processed
+   by CaPSID. CaPSID correctly identified all of the 17511 reads that mapped to viruses
+   (i.e., 7241 from the original human sample and 10270 from the simulated dataset).
+   As explained in the implementation section, CaPSID also keeps a record of reads that
+   align to both human and non-human reference sequences. Our simulated dataset contained
+   270 of these reads, and CaPSID correctly identified all of them as well.
+</p>
+<p style="line-height:160%">These results demonstrate the accuracy of our pipeline that is its ability to correctly
+   discriminate all of the alignments results provided by the aligner.
+</p>
+<p style="line-height:160%">It is worth emphasizing, however, that the alignment accuracy is independent of the
+   CaPSID pipeline and depends entirely on the choice of the alignment algorithm and
+   the quality of the sequenced reads.
+</p>
+<p style="line-height:160%">The BAM files from this simulated dataset can be downloaded from the CaPSID’s homepage
+   as part of its demo package.
+</p>
+<h4>Ovarian cancer dataset</h4>
+<p style="line-height:160%">Sixteen ovarian tumor transcriptomes were sequenced (for a total of 2.5 billion of
+   reads) at the Ontario Institute for Cancer Research using both the Illumina and AB
+   SOLiD technologies.
+</p>
+<p style="line-height:160%">Sequenced samples were first aligned to human and pathogen genomes and then processed
+   through CaPSID’s analysis pipeline. After ranking all reported virus genomes in each
+   sample according to the maximum gene coverage metric using CaPSID’s web interface,
+   one sample, OVCA0016, came to our attention.
+</p>
+<p style="line-height:160%">Figure <a name="d8149e518"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F4','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F4">4</a> shows that in this sample, among its top four genome hits with gene coverage greater
+   than 90% were the simian virus 40 (SV40) followed by three group C-type human adenovirus
+   genomes. Further analysis using CaPSID’s genome browser revealed that SV40 reads were
+   concentrated almost entirely across its small and large T-antigens (Figure <a name="d8149e521"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F5','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F5">5</a>A) whereas only the early region 1 E1A and E1B adenovirus (most likely Ad5) genes
+   were expressed (Figure <a name="d8149e524"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F5','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F5">5</a>B). As it seemed highly unlikely to find a human ovarian tumor expressing both adenovirus
+   and SV40 oncogene products, we hypothesized if the OVCA0016 cell line had been contaminated
+   with or accidentally replaced by 293T cells, an SV40 T antigen-expressing human embryonic
+   kidney cell line <a name="d8149e528"></a>[<a onclick="LoadInParent('#B19'); return false;" href="#B19">19</a>] derived from Ad5 E1A-/E1B-expressing 293 cells <a name="d8149e532"></a>[<a onclick="LoadInParent('#B20'); return false;" href="#B20">20</a>].
+</p><div class="figs">
+<div class="fig"><p><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F4','F4',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F4"><img src="bmcBioinformatics_test_files/1471-2105-13-206-4.gif" alt="thumbnail" class="thumbnail" align="top"><strong>Figure 4.</strong></a> <strong>The top four pathogen genomes hit in the 293T cells as calculated by CaPSID.</strong> The top four genomes hit with the maximum coverage greater than 90% ranked by their
+   maximum gene coverage.
+</p></div>
+<div class="fig"><p><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F5','F5',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F5"><img src="bmcBioinformatics_test_files/1471-2105-13-206-5.gif" alt="thumbnail" class="thumbnail" align="top"><strong>Figure 5.</strong></a> <strong>The distribution of aligned reads across top four pathogen genomes hit in the OVCA0016
+      cells.</strong><strong>A</strong>- Shows the distribution of hits across the SV40 viral genome, with aligned reads
+   concentrating almost entirely across its small and large T-antigens. <strong>B</strong>- Shows E1A and E1B genes to be expressed in all three adenoviruses.
+</p></div></div>
+<p style="line-height:160%">To process the OVCA0016 sample with approx 255 million reads in two BAM files of 22
+   GB and 30 GB takes approximately 21 minutes when using 5GB of RAM on a 16-core AMD
+   64-bit processor.
+</p>
+<h4>In vitro validation</h4>
+<p style="line-height:160%">To examine this possibility OVCA0016 cells as well as 293T (positive control) and
+   human H1299 lung carcinoma (negative control) cells were harvested in lysis buffer
+   and proteins were separated on SDS-PAGE gels, transferred onto PVDF membranes and
+   probed for Ad5 E1A (Figure <a name="d8149e574"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F6','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F6">6</a>A top panel), Ad5 E1B55K (middle panel), and SV40 large T (bottom panel), as described
+   previously <a name="d8149e578"></a>[<a onclick="LoadInParent('#B21'); return false;" href="#B21">21</a>]. With each of these proteins, a signal was detected in OVCA0016 at intensities similar
+   to those found in 293T cells, whereas no signal was observed for either in H1299 cells.
+   The same three cell lines were also grown on cover slips, fixed with 4% paraformaldehyde,
+   stained with the same antibodies and analysed by immunofluorescence on a confocal
+   microscopy as described previously <a name="d8149e582"></a>[<a onclick="LoadInParent('#B22'); return false;" href="#B22">22</a>]. In each case about 400 cells were analyzed in multiple fields for the expression
+   of E1A protein, E1B55K or SV40 T antigen. Figure <a name="d8149e585"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F6','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F6">6</a>B shows representative fields examined and that in the case of 293T cells, every cell
+   observed expressed all three viral proteins whereas with H1299 cells none of these
+   species was observed in any cell. Interestingly, with OVCA0016, all cells examined
+   appeared to express both Ad5 E1A and E1B; however, in the case of SV40 T antigen,
+   only one field of all cells examined contained any cells that failed to express this
+   viral protein (marked in the Figure <a name="d8149e588"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F6','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F6">6</a>B with arrows). As 293T cells are known to multiply in clumps, these results suggested
+   that at most only 1-2% of cells failed to express these viral proteins, suggesting
+   that the OVCA0016 cell line may indeed have been accidentally contaminated and eventually
+   largely overgrown by 293T cells. This hypothesis was then confirmed by interrogation
+   of the DSMZ STR database <a name="d8149e593"></a>[<a onclick="LoadInParent('#B23'); return false;" href="#B23">23</a>] using 9 short tandem repeat (STR) sequences of OVCA0016 cells generated at the The
+   Centre for Applied Genomics (TCAG). The table provided (see Additional file <a name="d8149e596"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/suppl/S1','',630,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/suppl/S1">1</a>) shows that the top 10 results with the highest arbitrary evaluation value (EV) are
+   293T and other corresponding variants (HKb20, ProPak-X.36, ProPak-A.52...).
+</p><div class="figs">
+<div class="addfile "><p><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/suppl/S1','S1',630,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/suppl/S1"></a><strong>Additional file 1.</strong> Table S1. Short tandem repeat sequence (STR) analysis in OVCA0016. Table S1 shows
+   that the top 10 results with the highest arbitrary evaluation value (EV) are 293T
+   and other corresponding variants (HKb20, ProPak-X.36, ProPak-A.52...).</p><p>
+   	Format: XLS 
+   	Size: 18KB <a href="http://www.biomedcentral.com/content/supplementary/1471-2105-13-206-s1.xls">Download file</a></p><p>This file can be viewed with: <a onclick="largepopup('http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=1cd6acf9-ce06-4e1c-8dcf-f33f669dbc3a','Help');return false;" href="http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=1cd6acf9-ce06-4e1c-8dcf-f33f669dbc3a">Microsoft Excel Viewer</a><span class="open-data-icon"><a href="http://www.biomedcentral.com/about/access/#opendata"><img title="Open Data" alt="Open Data" src="bmcBioinformatics_test_files/opendata.gif"></a></span></p></div>
+<div class="fig"><p><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/figure/F6','F6',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/figure/F6"><img src="bmcBioinformatics_test_files/1471-2105-13-206-6.gif" alt="thumbnail" class="thumbnail" align="top"><strong>Figure 6.</strong></a> <strong>Analysis of adenovirus E1A/E1B and SV40 T antigen expression in OVCA0016 cultures.</strong><strong>A</strong> - Western blotting analysis. Extracts from OVCA0016, 292T and H1299 cells were analyzed
+   by western blotting using M73 (E1A), 2A6 (E1B55K) and Pab101 (SV40 T antigen, BD Pharmingen)
+   antibodies, as described previously <a name="d8149e624"></a>[<a onclick="LoadInParent('#B21'); return false;" href="#B21">21</a>]. <strong>B</strong> - Immunofluorescence microscopy. The same cells types were grown on coverslips and
+   analyzed by confocal immunofluorescence microscopy <a name="d8149e631"></a>[<a onclick="LoadInParent('#B22'); return false;" href="#B22">22</a>]. Cells not expressing T antigen have been indicated with arrows on the figure.
+</p></div></div>
+<p style="line-height:160%">These results indicated that indeed the OVCA0016 cell line appeared to consist almost
+   entirely of 293T cells, with only a small percentage of the original tumor cell line
+   remaining.
+</p>
+<p style="line-height:160%">Although these results are of no biological significance, this unfortunate contamination
+   of the OVCA0016 ovarian tumor cell line by 293T cells offered an ideal blind test
+   of the efficacy of CaPSID and demonstrated its ability to detect viral gene expression
+   in transcriptome sequences from human tumor cell lines.
+</p>
+<h4>Assembly of the unaligned reads</h4>
+<p style="line-height:160%">As mentioned earlier, CaPSID saves after digital subtraction, the reads that do not
+   align to any of the references sequences in a FASTQ file. The existence of these unaligned
+   reads could be indicative of the presence of some unknown pathogen (or organism) in
+   the sequenced sample. In order to further characterize the unaligned reads in the
+   contaminated sample, we performed de novo assembly of unmapped reads using the short-read
+   assembler Trinity <a name="d8149e646"></a>[<a onclick="LoadInParent('#B24'); return false;" href="#B24">24</a>].
+</p>
+<p style="line-height:160%">We note that when assembling whole genome sequencing data (WGS), where the result
+   of alternative splicing is not observed, users should choose a different assembly
+   algorithm such as Velvet <a name="d8149e652"></a>[<a onclick="LoadInParent('#B25'); return false;" href="#B25">25</a>]. Of the total of 255 million reads, 9 million did not map to any reference sequence
+   in the CaPSID’s database, of these approximately 7.69% assembled into contigs. The
+   Trinity assembler produced in total 13395 contigs ranging from 201 to 6483 bp in length.
+   Using BLAT <a name="d8149e656"></a>[<a onclick="LoadInParent('#B26'); return false;" href="#B26">26</a>] and MEGA-BLAST <a name="d8149e660"></a>[<a onclick="LoadInParent('#B27'); return false;" href="#B27">27</a>], we found that only 69 of the assembled contigs did not map to any of the sequences
+   present in either CaPSID’s or NCBI’s reference databases. In order to identify possible
+   novel pathogens, these 69 contigs were screened for the presence of known protein
+   features, using the InterPro <a name="d8149e664"></a>[<a onclick="LoadInParent('#B28'); return false;" href="#B28">28</a>] database of protein families, domains and functional sites. Nucleic acid sequences
+   were first translated in all 6 frames and then scanned using the InterProScan (iprscan_soappy.py
+   –crc –goterms). We found that none of them displayed a protein feature similar to
+   the pathogen protein features found in the InterPro database. We conclude that none
+   of the remaining contigs are derived from a known pathogen and more likely are due
+   to either sequencing artifacts, uncharacterized regions of the human genome or the
+   presence of some unknown organism having protein features that do not match any of
+   the protein motifs in the InterPro database.
+</p>
+<h4>The comparison of CaPSID to other software for the identification of pathogens in
+   high-throughput sequencing
+</h4>
+<p style="line-height:160%">As mentioned in the background section a number of computational approaches already
+   exist <a name="d8149e674"></a><a name="d8149e676"></a><a name="d8149e678"></a><a name="d8149e680"></a><a name="d8149e682"></a><a name="d8149e684"></a>[<a onclick="LoadInParent('#B4'); return false;" href="#B4">4</a>-<a onclick="LoadInParent('#B9'); return false;" href="#B9">9</a>] for the discovery and detection of known and new pathogens from high-throughput sequencing
+   data. However only two of these, namely PathSeq <a name="d8149e688"></a>[<a onclick="LoadInParent('#B6'); return false;" href="#B6">6</a>] and RINS <a name="d8149e692"></a>[<a onclick="LoadInParent('#B9'); return false;" href="#B9">9</a>], are available as integrated open source software similar to CaPSID.
+</p>
+<h4>Specificity and sensitivity analysis comparison</h4>
+<p style="line-height:160%">In this section we compare the accuracy and sensitivity of CaPSID to that of RINS
+   <a name="d8149e702"></a>[<a onclick="LoadInParent('#B9'); return false;" href="#B9">9</a>], a recently published software for the identification of non-human sequences in high-throughput
+   sequencing datasets.
+</p>
+<p style="line-height:160%">In order to compare results obtained with CaPSID and RINS we have created a benchmark
+   dataset composed entirely of simulated reads drawn at random from both the human and
+   viral reference sequences. The benchmark dataset is composed of 10 million reads (read
+   length of 100 bp) generated at random from the human reference sequence (GRCh37/hg19)
+   spiked with 10000 reads (read length of 100 bp) generated at random from 10 viral
+   genomes. Each viral genome was then mutated by random substitutions at 3 distinct
+   rates (5%, 10% and 25%). One thousand reads from each mutated genome were then randomly
+   generated to produce an additional 30000 viral reads (1000×10×3). Since the read composition
+   of the benchmark dataset is exactly known it serves as a good standard for evaluating
+   the accuracy and sensitivity of both CaPSID and RINS. In the CaPSID analysis all reads
+   from the benchmark dataset were aligned with the freely available Bowtie 2 <a name="d8149e708"></a>[<a onclick="LoadInParent('#B15'); return false;" href="#B15">15</a>] aligner. The three metrics used to compare the two software applications are defined
+   in eqs.(1-3) as shown below. 
+</p>
+<p style="line-height:160%" class="inlinenumber">
+   </p><div style="display:table;width:100%;*display:inline"><span class="math-block" style="*float:left;*display:inline">
+         <span style="font-size: 115%;" class="MathJax_MathML"><math><mtext mathvariant="italic">Sensitivity</mtext><mo>=</mo><mfrac><mrow><msub><mrow><mi>n</mi></mrow><mrow><mtext>vgNOT</mtext></mrow></msub></mrow><mrow><msub><mrow><mi>n</mi></mrow><mrow><mtext>vgTot</mtext></mrow></msub></mrow></mfrac></math></span><script id="MathJax-Element-1" type="math/mml"><m:math name="1471-2105-13-206-i1" xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:mtext mathvariant="italic">Sensitivity</m:mtext>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+               <m:mrow>
+                  <m:msub>
+                     <m:mrow>
+                        <m:mi>n</m:mi>
+                     </m:mrow>
+                     <m:mrow>
+                        <m:mtext>vgNOT</m:mtext>
+                     </m:mrow>
+                  </m:msub>
+               </m:mrow>
+               <m:mrow>
+                  <m:msub>
+                     <m:mrow>
+                        <m:mi>n</m:mi>
+                     </m:mrow>
+                     <m:mrow>
+                        <m:mtext>vgTot</m:mtext>
+                     </m:mrow>
+                  </m:msub>
+               </m:mrow>
+            </m:mfrac>
+         </m:math></script></span><noscript><span class="math-inline-image"><a title="View MathML" onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M1','MathML',630,470);return false;" href="http://www.biomedcentral.com/1471-2105/13/206/mathml/M1"><img class="mathimg" src="/content/inline/1471-2105-13-206-i1.gif" alt="<a onClick=&#34;popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M1','MathML',630,470);return false;&#34; target=&#34;_blank&#34; href=&#34;http://www.biomedcentral.com/1471-2105/13/206/mathml/M1&#34;&gt;View MathML</a&gt;"></a></span></noscript><span style="font-size:80%;text-align:right;display:table-cell;vertical-align:center;*float:right;*display:inline;*position:relative;*top:6px">(1)</span></div>
+<p></p>
+<p style="line-height:160%" class="inlinenumber">
+   </p><div style="display:table;width:100%;*display:inline"><span class="math-block" style="*float:left;*display:inline">
+         <span style="font-size: 115%;" class="MathJax_MathML"><math><mtext mathvariant="italic">Specificity</mtext><mo>=</mo><mfrac><mrow><msub><mrow><mi>n</mi></mrow><mrow><mtext>hg</mtext></mrow></msub></mrow><mrow><msub><mrow><mi>n</mi></mrow><mrow><mtext>hgTot</mtext></mrow></msub></mrow></mfrac></math></span><script id="MathJax-Element-2" type="math/mml"><m:math name="1471-2105-13-206-i2" xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:mtext mathvariant="italic">Specificity</m:mtext>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+               <m:mrow>
+                  <m:msub>
+                     <m:mrow>
+                        <m:mi>n</m:mi>
+                     </m:mrow>
+                     <m:mrow>
+                        <m:mtext>hg</m:mtext>
+                     </m:mrow>
+                  </m:msub>
+               </m:mrow>
+               <m:mrow>
+                  <m:msub>
+                     <m:mrow>
+                        <m:mi>n</m:mi>
+                     </m:mrow>
+                     <m:mrow>
+                        <m:mtext>hgTot</m:mtext>
+                     </m:mrow>
+                  </m:msub>
+               </m:mrow>
+            </m:mfrac>
+         </m:math></script></span><noscript><span class="math-inline-image"><a title="View MathML" onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M2','MathML',630,470);return false;" href="http://www.biomedcentral.com/1471-2105/13/206/mathml/M2"><img class="mathimg" src="/content/inline/1471-2105-13-206-i2.gif" alt="<a onClick=&#34;popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M2','MathML',630,470);return false;&#34; target=&#34;_blank&#34; href=&#34;http://www.biomedcentral.com/1471-2105/13/206/mathml/M2&#34;&gt;View MathML</a&gt;"></a></span></noscript><span style="font-size:80%;text-align:right;display:table-cell;vertical-align:center;*float:right;*display:inline;*position:relative;*top:6px">(2)</span></div>
+<p></p>
+<p style="line-height:160%">and the average hit rate (<span class="inline-math">
+      <span style="font-size: 115%;" class="MathJax_MathML"><math><mover accent="false"><mrow><mtext>hit</mtext><mspace width="2.77695pt"></mspace><mtext>rate</mtext></mrow><mo accent="true">¯</mo></mover></math></span><script id="MathJax-Element-3" type="math/mml"><m:math name="1471-2105-13-206-i3" xmlns:m="http://www.w3.org/1998/Math/MathML">
+         <m:mover accent="false">
+            <m:mrow>
+               <m:mtext>hit</m:mtext>
+               <m:mspace width="2.77695pt"></m:mspace>
+               <m:mtext>rate</m:mtext>
+            </m:mrow>
+            <m:mo accent="true">¯</m:mo>
+         </m:mover>
+      </m:math></script></span><noscript><span class="math-inline-image"><a title="View MathML" onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M3','MathML',630,470);return false;" href="http://www.biomedcentral.com/1471-2105/13/206/mathml/M3"><img class="mathimg" src="/content/inline/1471-2105-13-206-i3.gif" alt="<a onClick=&#34;popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M3','MathML',630,470);return false;&#34; target=&#34;_blank&#34; href=&#34;http://www.biomedcentral.com/1471-2105/13/206/mathml/M3&#34;&gt;View MathML</a&gt;"></a></span></noscript>) as 
+</p>
+<p style="line-height:160%" class="inlinenumber">
+   </p><div style="display:table;width:100%;*display:inline"><span class="math-block" style="*float:left;*display:inline">
+         <span style="font-size: 115%;" class="MathJax_MathML"><math><mover accent="false"><mrow><mtext>hit</mtext><mspace width="2.77695pt"></mspace><mtext>rate</mtext></mrow><mo accent="true">¯</mo></mover><mspace width="0.3em"></mspace><mo>(</mo><mi>in%</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>1</mn><mn>0</mn></mrow></mfrac><mo>·</mo><munderover accentunder="false" accent="false"><mrow><mo>∑</mo></mrow><mrow><mi>g</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>1</mn><mn>0</mn></mrow></munderover><mfrac><mrow><msub><mi>n</mi><mtext>vgTRU</mtext></msub><msub><mi>E</mi><mi>g</mi></msub></mrow><mrow><msub><mi>n</mi><mtext>vgTo</mtext></msub><msub><mi>t</mi><mi>g</mi></msub></mrow></mfrac></math></span><script id="MathJax-Element-4" type="math/mml"><m:math name="1471-2105-13-206-i4" xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:mover accent="false">
+               <m:mrow>
+                  <m:mtext>hit</m:mtext>
+                  <m:mspace width="2.77695pt"></m:mspace>
+                  <m:mtext>rate</m:mtext>
+               </m:mrow>
+               <m:mo accent="true">¯</m:mo>
+            </m:mover>
+            <m:mspace width="0.3em"></m:mspace>
+            <m:mo>(</m:mo>
+            <m:mi>in%</m:mi>
+            <m:mo>)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+               <m:mrow>
+                  <m:mn>1</m:mn>
+               </m:mrow>
+               <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mn>0</m:mn>
+               </m:mrow>
+            </m:mfrac>
+            <m:mo>·</m:mo>
+            <m:munderover accent="false" accentunder="false">
+               <m:mrow>
+                  <m:mo>∑</m:mo>
+               </m:mrow>
+               <m:mrow>
+                  <m:mi>g</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+               </m:mrow>
+               <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mn>0</m:mn>
+               </m:mrow>
+            </m:munderover>
+            <m:mfrac>
+               <m:mrow>
+                  <m:msub>
+                     <m:mi>n</m:mi>
+                     <m:mtext>vgTRU</m:mtext>
+                  </m:msub>
+                  <m:msub>
+                     <m:mi>E</m:mi>
+                     <m:mi>g</m:mi>
+                  </m:msub>
+               </m:mrow>
+               <m:mrow>
+                  <m:msub>
+                     <m:mi>n</m:mi>
+                     <m:mtext>vgTo</m:mtext>
+                  </m:msub>
+                  <m:msub>
+                     <m:mi>t</m:mi>
+                     <m:mi>g</m:mi>
+                  </m:msub>
+               </m:mrow>
+            </m:mfrac>
+         </m:math></script></span><noscript><span class="math-inline-image"><a title="View MathML" onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M4','MathML',630,470);return false;" href="http://www.biomedcentral.com/1471-2105/13/206/mathml/M4"><img class="mathimg" src="/content/inline/1471-2105-13-206-i4.gif" alt="<a onClick=&#34;popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M4','MathML',630,470);return false;&#34; target=&#34;_blank&#34; href=&#34;http://www.biomedcentral.com/1471-2105/13/206/mathml/M4&#34;&gt;View MathML</a&gt;"></a></span></noscript><span style="font-size:80%;text-align:right;display:table-cell;vertical-align:center;*float:right;*display:inline;*position:relative;*top:6px">(3)</span></div>
+<p></p>
+<p style="line-height:160%">where <sub><em>n</em><em>vgNOT</em></sub>, <sub><em>n</em><em>vgTot</em></sub>, <sub><em>n</em><em>hg</em></sub>, <sub><em>n</em><em>hgTot</em></sub>, <span class="inline-math">
+      <span style="font-size: 115%;" class="MathJax_MathML"><math><msub><mrow><mi>n</mi></mrow><mrow><mi>vgTRU</mi><msub><mrow><mi>E</mi></mrow><mrow><mi>g</mi></mrow></msub></mrow></msub></math></span><script id="MathJax-Element-5" type="math/mml"><m:math name="1471-2105-13-206-i5" xmlns:m="http://www.w3.org/1998/Math/MathML">
+         <m:msub>
+            <m:mrow>
+               <m:mi>n</m:mi>
+            </m:mrow>
+            <m:mrow>
+               <m:mi>vgTRU</m:mi>
+               <m:msub>
+                  <m:mrow>
+                     <m:mi>E</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                     <m:mi>g</m:mi>
+                  </m:mrow>
+               </m:msub>
+            </m:mrow>
+         </m:msub>
+      </m:math></script></span><noscript><span class="math-inline-image"><a title="View MathML" onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M5','MathML',630,470);return false;" href="http://www.biomedcentral.com/1471-2105/13/206/mathml/M5"><img class="mathimg" src="/content/inline/1471-2105-13-206-i5.gif" alt="<a onClick=&#34;popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M5','MathML',630,470);return false;&#34; target=&#34;_blank&#34; href=&#34;http://www.biomedcentral.com/1471-2105/13/206/mathml/M5&#34;&gt;View MathML</a&gt;"></a></span></noscript> and <span class="inline-math">
+      <span style="font-size: 115%;" class="MathJax_MathML"><math><msub><mrow><mi>n</mi></mrow><mrow><mtext>vgTo</mtext><msub><mrow><mi>t</mi></mrow><mrow><mi>g</mi></mrow></msub></mrow></msub></math></span><script id="MathJax-Element-6" type="math/mml"><m:math name="1471-2105-13-206-i6" xmlns:m="http://www.w3.org/1998/Math/MathML">
+         <m:msub>
+            <m:mrow>
+               <m:mi>n</m:mi>
+            </m:mrow>
+            <m:mrow>
+               <m:mtext>vgTo</m:mtext>
+               <m:msub>
+                  <m:mrow>
+                     <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                     <m:mi>g</m:mi>
+                  </m:mrow>
+               </m:msub>
+            </m:mrow>
+         </m:msub>
+      </m:math></script></span><noscript><span class="math-inline-image"><a title="View MathML" onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M6','MathML',630,470);return false;" href="http://www.biomedcentral.com/1471-2105/13/206/mathml/M6"><img class="mathimg" src="/content/inline/1471-2105-13-206-i6.gif" alt="<a onClick=&#34;popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M6','MathML',630,470);return false;&#34; target=&#34;_blank&#34; href=&#34;http://www.biomedcentral.com/1471-2105/13/206/mathml/M6&#34;&gt;View MathML</a&gt;"></a></span></noscript> are defined as shown below 
+</p>
+<p style="line-height:160%" class="xfullindent1">· nvgNOT = # of reads derived from viral genomes mapping to the human reference</p>
+<p style="line-height:160%" class="xfullindent1">· nvgTot = total # of reads derived from viral genomes</p>
+<p style="line-height:160%" class="xfullindent1">· nhg = # of reads derived from the human genome mapping to the human reference</p>
+<p style="line-height:160%" class="xfullindent1">· nhgTot = total # of reads derived from the human genome</p>
+<p style="line-height:160%" class="xfullindent1">· <span class="inline-math">
+      <span style="font-size: 115%;" class="MathJax_MathML"><math><msub><mrow><mi>n</mi></mrow><mrow><mi>vgTRU</mi><msub><mrow><mi>E</mi></mrow><mrow><mi>g</mi></mrow></msub></mrow></msub></math></span><script id="MathJax-Element-7" type="math/mml"><m:math name="1471-2105-13-206-i7" xmlns:m="http://www.w3.org/1998/Math/MathML">
+         <m:msub>
+            <m:mrow>
+               <m:mi>n</m:mi>
+            </m:mrow>
+            <m:mrow>
+               <m:mi>vgTRU</m:mi>
+               <m:msub>
+                  <m:mrow>
+                     <m:mi>E</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                     <m:mi>g</m:mi>
+                  </m:mrow>
+               </m:msub>
+            </m:mrow>
+         </m:msub>
+      </m:math></script></span><noscript><span class="math-inline-image"><a title="View MathML" onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M7','MathML',630,470);return false;" href="http://www.biomedcentral.com/1471-2105/13/206/mathml/M7"><img class="mathimg" src="/content/inline/1471-2105-13-206-i7.gif" alt="<a onClick=&#34;popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M7','MathML',630,470);return false;&#34; target=&#34;_blank&#34; href=&#34;http://www.biomedcentral.com/1471-2105/13/206/mathml/M7&#34;&gt;View MathML</a&gt;"></a></span></noscript> = # of reads derived from the viral genome g mapping to the viral reference sequence
+   g
+</p>
+<p style="line-height:160%" class="xfullindent1">·<span class="inline-math">
+      <span style="font-size: 115%;" class="MathJax_MathML"><math><msub><mrow><mi>n</mi></mrow><mrow><mi>vgTo</mi><msub><mrow><mi>t</mi></mrow><mrow><mi>g</mi></mrow></msub></mrow></msub></math></span><script id="MathJax-Element-8" type="math/mml"><m:math name="1471-2105-13-206-i8" xmlns:m="http://www.w3.org/1998/Math/MathML">
+         <m:msub>
+            <m:mrow>
+               <m:mi>n</m:mi>
+            </m:mrow>
+            <m:mrow>
+               <m:mi>vgTo</m:mi>
+               <m:msub>
+                  <m:mrow>
+                     <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                     <m:mi>g</m:mi>
+                  </m:mrow>
+               </m:msub>
+            </m:mrow>
+         </m:msub>
+      </m:math></script></span><noscript><span class="math-inline-image"><a title="View MathML" onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M8','MathML',630,470);return false;" href="http://www.biomedcentral.com/1471-2105/13/206/mathml/M8"><img class="mathimg" src="/content/inline/1471-2105-13-206-i8.gif" alt="<a onClick=&#34;popup('http://www.biomedcentral.com/1471-2105/13/206/mathml/M8','MathML',630,470);return false;&#34; target=&#34;_blank&#34; href=&#34;http://www.biomedcentral.com/1471-2105/13/206/mathml/M8&#34;&gt;View MathML</a&gt;"></a></span></noscript> = total # of reads derived from the viral genome g
+</p>
+<p style="line-height:160%">We found that the sensitivity and specificity of both CaPSID and RINS were 100% on
+   the benchmark dataset (including both the non-mutated and mutated data). The results
+   of our analysis indicate that CaPSID gives very similar results to those of RINS in
+   terms of sensitivity, specificity and performance (CaPSID runs in &lt; 20 min and RINS
+   in &lt; 14 min when performing the analysis on the benchmark dataset containing ≈ 10
+   million reads on a 16-core AMD 64-bit processor using &lt; 6GB or RAM). However when
+   using our third metric (see eq.3) we find that CaPSID performs better than RINS by
+   mapping significantly more reads derived from mutated genomes back to their original
+   reference sequences as shown in Table <a name="d8149e954"></a><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/table/T1','',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/table/T1">1</a>. This result demonstrates the ability of our approach to identify viral genomes with
+   substantially divergent sequences (up to 25%) and indicates that it could be used
+   for the identification of novel pathogen with up to 25% homology to the reference
+   sequences stored in its database.
+</p><div class="figs">
+<div class="table"><p><a onclick="popup('http://www.biomedcentral.com/1471-2105/13/206/table/T1','T1',800,470); return false;" href="http://www.biomedcentral.com/1471-2105/13/206/table/T1"><strong>Table 1.</strong></a> Comparison of the average hit rate between CaPSID and RINS for the three distinct
+   mutation rates
+</p></div></div>
+<h4>Other feature comparison</h4>
+<p style="line-height:160%">In addition to the comparison in accuracy and performance presented above, CaPSID
+   includes additional important features that to the best of our knowledge are not part
+   of either PathSeq or RINS. 
+</p>
+<p style="line-height:160%" class="xfullindent1">· Unlike PathSeq or RINS, which are primarily analysis tools, CaPSID has an easy to
+   use and manageable database allowing users to organize, store, analyze and visualize
+   information from each project and sample in a seamless way. CaPSID’s database is accessible
+   by CaPSID’s user-friendly web application that integrates a genome browser (complete
+   with genome annotations) making the analysis and visualization of alignment results
+   straightforward.
+</p>
+<p style="line-height:160%" class="xfullindent1">· CaPSID provides coverage metrics that allow users to rank pathogens in significance
+   based not only the overall genome coverage but on the gene coverage as well.
+</p>
+<p style="line-height:160%" class="xfullindent1">· In CaPSID, users can align short reads using any aligner of their choice: having
+   a single preferred aligner might be a limiting factor especially as new faster and
+   more accurate aligners become available (for example PathSeq uses the MAQ aligner
+   followed by Mega BLAST and BLASTN in order to align those reads with additional mismatches
+   or gaps that are not aligned by MAQ (see [6]) and RINS [9] uses a combination of BLAT
+   and Bowtie).
+</p>
+<p style="line-height:160%" class="xfullindent1">· Unlike PathSeq or RINS, CaPSID does not wholly remove reads that simultaneously
+   map to both human and pathogen genomes but keeps them in the database allowing rapid
+   identification of pathogen-to-host integration sites.
+</p>
+<p style="line-height:160%" class="xfullindent1">· CaPSID does not require a third party commercial computing platform such as the
+   one used by PathSeq (Amazon Elastic Compute Cloud, EC2) and can be run efficiently
+   on either a desktop computer or a cluster.
+</p>
+<p style="line-height:160%">PathSeq performs subtractive alignments using six different human genomes and then
+   uses local aligners such as Mega BLAST and BLASTN to re-align reads (not aligned by
+   MAQ during the initial alignments) to the two additional human sequence databases.
+   In comparison, CaPSID’s current subtraction is done in one pass against a single human
+   reference genome with splice junctions. Thus CaPSID might potentially fail to subtract
+   some of the reads aligned by PathSeq to its database of human references– although
+   this is not a fundamental constraint of the CaPSID architecture, and further work
+   to use multiple human reference databases would be relatively straightforward. However,
+   because PathSeq uses local aligners its approach can be computationally very intensive
+   and for users desiring to identify known pathogens with a large reduction in runtime
+   CaPSID’s approach might be more advantageous, especially when handling the large datasets
+   of next generation sequencing. In addition, CaPSID’s three-way approach of retaining
+   reads that map to pathogen genomes, even when they also map to human genomes, reduces
+   the risk that pathogen reads are inadvertently omitted during subtraction by both
+   PathSeq or RINS.
+</p><a name="sec4"></a><h3>Conclusions</h3>
+<p style="line-height:160%">In this article, we have presented CaPSID– a comprehensive bioinformatics platform
+   for the detection of pathogen sequences in genome and transcriptome samples. We have
+   demonstrated that CaPSID is an efficient tool that performs well on both the simulated
+   and real datasets. We have shown that CaPSID’s predictions can be successfully validated
+   in vitro, and that CaPSID offers new and useful features that are not available in
+   any current software used for the identification of pathogens in high-throughput sequencing.
+   Furthermore and more importantly, CaPSID is suitable for collaborative types of projects
+   between teams of scientists, for example between bioinformaticians and molecular virologists,
+   through its web interface allowing researchers without expert knowledge in computational
+   techniques to analyze alignment results stored in the CaPSID’s database. The CaPSID
+   platform is currently used in real production environment to analyze sequencing data
+   generated by the OICR laboratories from different tumor types. Since CaPSID was deployed
+   at the OICR, it was used in the analysis of more than 113 transcriptome samples across
+   six different projects with a total of 25 million aligned reads stored in the CaPSID
+   database. We believe CaPSID to be a versatile research tool that we hope will be used
+   by researchers for the detection and identification of known and new pathogens using
+   next generation sequencing data.
+</p><a name="sec5"></a><h3>Availability and requirements</h3>
+<p style="line-height:160%"><strong>Project Name:</strong> CaPSID <strong>Project home page:</strong><a href="https://github.com/capsid/capsid">https://github.com/capsid/capsid</a> <a href="http://www.webcitation.org/query.php?url=https://github.com/capsid/capsid&amp;refdoi=10.1186/1471-2105-13-206" alt="" title="Archive copy of webpage" class="xpushbutton">webcite</a><strong>Operating system(s):</strong> Linux, Mac OS X <strong>Programming language:</strong> Python 2.7 (no support for Python 3 at the moment), Groovy<strong>Other requirements:</strong> MongoDB, OpenJDK (≥ 1.6.0_20), BioPython <strong>License:</strong> GNU GPL3 <strong>Any restrictions to use by non-academics:</strong> None
+</p><a name="sec6"></a><h3>Competing interests</h3>
+<p style="line-height:160%">The authors declare that they have no competing interests.</p><a name="sec7"></a><h3>Authors’ contributions</h3>
+<p style="line-height:160%">VF, IB, SW and PL developed CaPSID, VF and IB set up the methodology, IB carried out
+   data analysis and drafted the manuscript, SW implemented CaPSID. VF drafted the manuscript,
+   conceived and directed the project. PEB, PB and RR designed and performed in vitro
+   validation experiments. PMK and FS carried out the STR analysis. VF, IB, SW, PMK,
+   FS, SNW, PB and PEB wrote and revised the manuscript. All authors read and approved
+   the final manuscript.
+</p><a name="ack"></a><h3>Acknowledgements</h3>
+<p style="line-height:160%">VF, IB, SW, SWN and PL received support for their work from the Ontario Institute
+   for Cancer Research (OICR) through funding provided by the government of Ontario.
+   The authors are grateful to the OICR’s Genome Technologies Director John McPherson
+   and his team for sample preparation and sequencing as well as to Timothy Beck and
+   his OICR bioinformatics support team. Research contributed by PB and PEB was supported
+   by grants from the Canadian Institutes of Health Research. Research contributed by
+   RR, PMK and FS was supported by grants from the Terry Fox Research Institute and the
+   Ontario Institute for Cancer Research.
+</p><a name="refs"></a><h3>References</h3>
+<div id="article-references">
+   <ol id="references">
+      <li id="B1">
+         <p><a name="B1"></a> zur Hausen H: <em>Infections Causing Human Cancer</em>.  Wiley-VCH Verlag GmbH &amp; Co. KGaA, Weinheim;  2006. <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B1" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B1','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B2">
+         <p><a name="B2"></a> Javier RT,  Butel JS: <strong> The history of tumor virology. </strong></p><p><em>Cancer Res</em> 2008,  <strong>68</strong><strong>:</strong>7693-7706.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/18829521">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=18829521">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B2" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B2','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B3">
+         <p><a name="B3"></a> Hudson TJ, <em>et al</em>.: <strong> International network of cancer genome projects. </strong></p><p><em>Nature</em> 2010,  <strong>464</strong><strong>:</strong>993-998.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/20393554">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=20393554">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=20393554">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B3" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B3','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B4">
+         <p><a name="B4"></a> Feng H,  Shuda M,  Chang Y,  Moore PS: <strong> Clonal Integration of a Polyomavirusin Human Merkel Cell Carcinoma. </strong></p><p><em>Science</em> 2009,  <strong>319</strong><strong>:</strong>1096-1100.  <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B4" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B4','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B5">
+         <p><a name="B5"></a> Palacios G,  Druce J,  Du L,  Tran T,  
+Birch C,  Briese T,  Conlan S,  Quan PL,  Hui J,  Marshall J,  Simons 
+JF,  Egholm M,  Paddock CD,  Shieh WJ,  Goldsmith CS,  Zaki SR,  Catton 
+M,  Lipkin WI: <strong> A new arenavirus in a cluster of fatal transplant-associated diseases. </strong></p><p><em>N Engl J Med</em> 2008,  <strong>358</strong><strong>:</strong>991-998.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/18256387">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=18256387">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B5" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B5','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B6">
+         <p><a name="B6"></a> Kostic AD,  Ojesina AI,  Pedamallu CS,  Jung J,  Verhaak RG,  Getz G,  Meyerson M: <strong> PathSeq: software to identify or discover microbes by deep sequencing of human tissue. </strong></p><p><em>Nat Biotechnol</em> 2011,  <strong>29</strong><strong>:</strong>393-396.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/21552235">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=21552235">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B6" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B6','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B7">
+         <p><a name="B7"></a> Isakov O,  Modai S,  Shomron N: <strong> Pathogen detection using short-RNA deep sequencing subtraction and assembly. </strong></p><p><em>Bioinf</em> 2011,  <strong>27</strong><strong>:</strong>2027-2030.   <a target="_blank" href="http://dx.doi.org/10.1093/bioinformatics/btr349">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B7" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B7','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B8">
+         <p><a name="B8"></a> Weber G,  Shendure J,  Tanenbaum DM,  Church GM,  Meyerson M: <strong> Identification of foreign gene sequences by transcript filtering against the human
+               genome. </strong></p><p><em>Nat Genet</em> 2002,  <strong>30</strong><strong>:</strong>141-142.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/11788827">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=11788827">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B8" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B8','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B9">
+         <p><a name="B9"></a> Bhaduri A,  Qu K,  Lee CS,  Ungewickell A,  Khavari PA: <strong> Rapid identification of non-human sequences in high-throughput sequencing datasets. </strong></p><p><em>Bioinf</em> 2012,  <strong>28</strong>(8)<strong>:</strong>1174-1175.   <a target="_blank" href="http://dx.doi.org/10.1093/bioinformatics/bts100">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B9" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B9','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B10">
+         <p><a name="B10"></a> Feng H,  Taylor JL,  Benos PV,  Newton R,  Waddell K,  Lucas SB,  Chang Y,  Moore PS: <strong> Human transcriptome subtraction by using short sequence tags to search for tumor viruses
+               in conjunctival carcinoma. </strong></p><p><em>J Virol</em> 2007,  <strong>81</strong><strong>:</strong>11332-11340.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/17686852">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=17686852">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=17686852">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B10" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B10','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B11">
+         <p><a name="B11"></a> Cock PJ,  Antao T,  Chang JT,  Chapman 
+BA,  Cox CJ,  Dalke A,  Friedberg I,  Hamelryck T,  Kauff F,  Wilczynski
+ B,  de Hoon MJ: <strong> Biopython: freely available Python tools for computational molecular biology and bioinformatics. </strong></p><p><em>Bioinf</em> 2009,  <strong>25</strong>(11)<strong>:</strong>1422-1423.   <a target="_blank" href="http://dx.doi.org/10.1093/bioinformatics/btp163">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B11" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B11','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B12">
+         <p><a name="B12"></a> Fujita PA,  Rhead B,  Zweig AS,  Hinrichs
+ AS,  Karolchik D,  Cline MS,  Goldman M,  Barber GP,  Clawson H,  
+Coelho A,  Diekhans M,  Dreszer TR,  Giardine BM,  Harte RA,  
+Hillman-Jackson J,  Hsu F,  Kirkup V,  Kuhn RM,  Learned K,  Li CH,  
+Meyer LR,  Pohl A,  Raney BJ,  Rosenbloom KR,  Smith KE,  Haussler D,  
+Kent WJ: <strong> The UCSC Genome Browser database: update 2011. </strong></p><p><em>Nucleic Acids Res</em> 2011,  <strong>39</strong><strong>:</strong>D876-D882.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/20959295">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=20959295">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=20959295">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B12" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B12','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B13">
+         <p><a name="B13"></a> Pruitt KD,  Tatusova T,  Klimke W,  Maglott DR: <strong> NCBI Reference Sequences: current status, policy, and new initiatives. </strong></p><p><em>Nucleic Acids Res</em> 2009,  <strong>37</strong><strong>:</strong>D32-D36.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/18927115">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=18927115">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=18927115">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B13" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B13','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B14">
+         <p><a name="B14"></a><strong> Novoalign </strong>[<a href="http://www.novocraft.com/main/index.php">http://www.novocraft.com/main/index.php</a> <a href="http://www.webcitation.org/query.php?url=http://www.novocraft.com/main/index.php&amp;refdoi=10.1186/1471-2105-13-206" alt="" title="Archive copy of webpage" class="xpushbutton">webcite</a>]
+         </p>
+      </li>
+      <li id="B15">
+         <p><a name="B15"></a> Langmead B,  Trapnell C,  Pop M,  Salzberg SL: <strong> Ultrafast and memory-efficient alignment of short DNA sequences to the human genome. </strong></p><p><em>Genome Biol</em> 2009,  <strong>10</strong><strong>:</strong>R25.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/19261174">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://dx.doi.org/10.1186/gb-2009-10-3-r25">BioMed&nbsp;Central&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=19261174">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B15" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B15','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B16">
+         <p><a name="B16"></a> David M,  Dzamba M,  Lister D,  Ilie L,  Brudno M: <strong> SHRiMP2: sensitive yet practical SHort Read Mapping. </strong></p><p><em>Bioinf</em> 2011,  <strong>27</strong><strong>:</strong>1011-1012.   <a target="_blank" href="http://dx.doi.org/10.1093/bioinformatics/btr046">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B16" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B16','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B17">
+         <p><a name="B17"></a><strong> MongoDB </strong>[<a href="http://www.mongodb.org/">http://www.mongodb.org/</a> <a href="http://www.webcitation.org/query.php?url=http://www.mongodb.org/&amp;refdoi=10.1186/1471-2105-13-206" alt="" title="Archive copy of webpage" class="xpushbutton">webcite</a>]
+         </p>
+      </li>
+      <li id="B18">
+         <p><a name="B18"></a> Skinner ME,  Uzilov AV,  Stein LD,  Mungall CJ,  Holmes IH: <strong> JBrowse: a next-generation genome browser. </strong></p><p><em>Genome Res</em> 2009,  <strong>19</strong><strong>:</strong>1630-1638.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/19570905">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=19570905">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=19570905">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B18" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B18','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B19">
+         <p><a name="B19"></a> DuBridge RB,  Tang P,  Hsia HC,  Leong PM,  Miller JH,  Calos MP: <strong> Analysis of mutation in human cells by using an Epstein-Barr virus shuttle system. </strong></p><p><em>Mol Cell Biol</em> 1987,  <strong>7</strong><strong>:</strong>379-387.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/3031469">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=3031469">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=3031469">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B19" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B19','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B20">
+         <p><a name="B20"></a> Graham FL,  Smiley J,  Russell WC,  Nairn R: <strong> Characteristics of a human cell line transformed by DNA from human adenovirus type
+               5. </strong></p><p><em>J Gen Virol</em> 1977,  <strong>36</strong><strong>:</strong>59-74.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/886304">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=886304">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B20" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B20','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B21">
+         <p><a name="B21"></a> Blanchette P,  Cheng CY,  Yan Q,  Ketner G,  Ornelles DA,  Dobner T,  Conaway RC,  Conaway JW,  Branton PE: <strong> Both BC-box motifs of adenovirus protein E4orf6 are required to efficiently assemble
+               an E3 ligase complex that degrades p53. </strong></p><p><em>Mol Cell Biol</em> 2004,  <strong>24</strong><strong>:</strong>9619-9629.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/15485928">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=15485928">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=15485928">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B21" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B21','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B22">
+         <p><a name="B22"></a> Cheng CY,  Gilson T,  Dallaire F,  Ketner G,  Branton PE,  Blanchette P: <strong> The E4orf6/E1B55K E3 ubiquitin ligase complexes of human adenoviruses exhibit heterogeneity
+               in composition and substrate specificity. </strong></p><p><em>J Virol</em> 2011,  <strong>85</strong><strong>:</strong>765-775.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/21068234">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=21068234">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=21068234">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B22" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B22','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B23">
+         <p><a name="B23"></a> Dirks WG,  Drexler HG: <strong> Online verification of human cell line identity by STR DNA typing. </strong></p><p><em>Methods Mol Biol</em> 2011,  <strong>731</strong><strong>:</strong>45-55.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/21516397">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=21516397">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B23" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B23','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B24">
+         <p><a name="B24"></a> Grabherr MG,  Haas BJ,  Yassour M,  Levin
+ JZ,  Thompson DA,  Amit I,  Adiconis X,  Fan L,  Raychowdhury R,  Zeng 
+Q,  Chen Z,  Mauceli E,  Hacohen N,  Gnirke A,  Rhind N,  di Palma F,  
+Birren BW,  Nusbaum C,  Lindblad-Toh K,  Friedman N,  Regev A,  Grabherr
+ MG: <strong> Full-length transcriptome assembly from RNA-Seq data without a reference genome. </strong></p><p><em>Nature Biotechnol</em> 2011,  <strong>29</strong><strong>:</strong>644-652.   <a target="_blank" href="http://dx.doi.org/10.1038/nbt.1883">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B24" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B24','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B25">
+         <p><a name="B25"></a> Zerbino DR,  Birney E: <strong> Velvet: algorithms for de novo short read assembly using de Bruijn graphs. </strong></p><p><em>Genome Res</em> 2008,  <strong>18</strong><strong>:</strong>821-829.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/18349386">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=18349386">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=18349386">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B25" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B25','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B26">
+         <p><a name="B26"></a> Kent WJ: <strong> BLAT - the BLAST-like alignment tool. </strong></p><p><em>Genome Res</em> 2002,  <strong>12</strong>(4)<strong>:</strong>656-664.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/11932250">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=11932250">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=11932250">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B26" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B26','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B27">
+         <p><a name="B27"></a> Altschul SF,  Gish W,  Miller W,  Myers EW,  Lipman DJ: <strong> Basic local alignment search tool. </strong></p><p><em>J Mol Biol</em> 1990,  <strong>215</strong><strong>:</strong>403-410.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/2231712">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=2231712">Publisher&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B27" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B27','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+      <li id="B28">
+         <p><a name="B28"></a> Hunter S,  Jones P,  Mitchell A,  
+Apweiler R,  Attwood TK,  Bateman A,  Bernard T,  Binns D,  Bork P,  
+Burge S,  de Castro E,  Coggill P,  Corbett M,  Das U,  Daugherty L,  
+Duquenne L,  Finn RD,  Fraser M,  Gough J,  Haft D,  Hulo N,  Kahn D,  
+Kelly E,  Letunic I,  Lonsdale D,  Lopez R,  Madera M,  Maslen J,  
+McAnulla C,  McDowall J,  McMenamin C,  Mi H,  Mutowo-Muellenet P,  
+Mulder N,  Natale D,  Orengo C,  Pesseat S,  Punta M,  Quinn AF,  
+Rivoire C,  Sangrador-Vegas A,  Selengut JD,  Sigrist CJ,  Scheremetjew 
+M,  Tate J,  Thimmajanarthanan M,  Thomas PD,  Wu CH,  Yeats C,  Yong 
+SY: <strong> InterPro in 2011: new developments in the family and domain prediction database (2011). </strong></p><p><em>Nucleic Acids Res</em> 2011,  <strong>40</strong>(D1)<strong>:</strong>D306-D312.  <a target="_blank" href="http://www.biomedcentral.com/pubmed/22096229">PubMed&nbsp;Abstract</a> | <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=22096229">Publisher&nbsp;Full&nbsp;Text</a> | <a target="_blank" href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=22096229">PubMed&nbsp;Central&nbsp;Full&nbsp;Text</a> <a href="http://www.biomedcentral.com/sfx_links?ui=1471-2105-13-206&amp;bibl=B28" onclick="popup('/sfx_links?ui=1471-2105-13-206&amp;bibl=B28','SFXMenu','460','420'); return false;"><img src="bmcBioinformatics_test_files/sfx_links.gif" alt="OpenURL" align="absmiddle"></a></p>
+            <p class="totext"><script type="text/javascript">totext()</script><a href="javascript:returnToText();">Return to text</a></p>
+         <p></p>
+      </li>
+   </ol>
+</div>
+                    </div>
+                </div>
+    </div>
+    </div>
+    <div class="b png_bg">
+        <div class="r png_bg"></div>
+    </div>
+</div>
+
+
+		</div>
+</div>
+    
+<dl class="google-ad  ">
+        
+                    <dt style="display: block;" class="hide"></dt>
+             
+        <dd>
+<!-- OAS AD 'Bottom' begin -->
+<script type="text/javascript">
+OAS_AD('Bottom');
+
+</script>
+
+
+		
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var filePath                     = "http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/biomed/House-GA-gigasciencejournal-LB/GigaScience_PosLau_Leaderboard_v1.swf/1343036297";
+var TFSMFlash_PRETAG             = "";
+var TFSMFlash_POSTTAG            = "";
+var TFSMFlash_VERSION            = "8";
+var TFSMFlash_WMODE              = "window";
+
+			var TFSMFlash_OASCLICK           = "http://oas.biomedcentral.com/5c/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/L43/787903637/Bottom/biomed/House-GA-gigasciencejournal-LB/House-GA-gigasciencejournal-LB.html/32506d4b446b764f387a6341446f3736";
+	
+
+
+var TFSMFlash_SWFCLICKVARIABLE   = "?clickTAG="+TFSMFlash_OASCLICK + "";
+var TFSMFlash_SWFFILE            = filePath + TFSMFlash_SWFCLICKVARIABLE;
+var TFSMFlash_FSCOMMAND          = "";
+var TFSMFlash_IMAGEALTERNATE     = "http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/biomed/House-GA-gigasciencejournal-LB/GigaScience_PosLau_Leaderboard_v1.gif/1343036297";
+
+
+var TFSMFlash_OASALTTEXT         = "";
+var TFSMFlash_OASTARGET          = "_blank";
+var TFSMFlash_OASPROTOCOL        = "http://";
+var TFSMFlash_OASDIM             = "width='728px' height='90px'";
+var TFSMFlash_OASADID            = "OAS_RMF_Bottom_FLASH";
+document.write("<"+"scr"+"ipt type=\"text/javascript\" src=\"http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/biomed/House-GA-gigasciencejournal-LB/TFSMFlashWrapper301.js/1343036297\"><\/scr"+"ipt"+">");
+//]]>
+</script><script type="text/javascript" src="bmcBioinformatics_test_files/1343036297.js"></script><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" id="OAS_RMF_Bottom_FLASH" alt="" align="" height="90px" width="728px"><param name="movie" value="http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/biomed/House-GA-gigasciencejournal-LB/GigaScience_PosLau_Leaderboard_v1.swf/1343036297?clickTAG=http://oas.biomedcentral.com/5c/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/L43/787903637/Bottom/biomed/House-GA-gigasciencejournal-LB/House-GA-gigasciencejournal-LB.html/32506d4b446b764f387a6341446f3736"><param name="quality" value="high"><param name="wmode" value="window"><param name="AllowScriptAccess" value="always"><embed src="bmcBioinformatics_test_files/1343036297" quality="high" wmode="window" swliveconnect="FALSE" name="OAS_RMF_Bottom_FLASH" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" alt="" align="" height="90px" width="728px"></object>
+<noscript>
+	<a href="http://oas.biomedcentral.com/5c/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/L43/787903637/Bottom/biomed/House-GA-gigasciencejournal-LB/House-GA-gigasciencejournal-LB.html/32506d4b446b764f387a6341446f3736" target="_blank">
+		<img src="http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/biomed/House-GA-gigasciencejournal-LB/GigaScience_PosLau_Leaderboard_v1.gif/1343036297" width="728" height="90" alt="" style="border:0px black solid;" />
+	</a>
+</noscript>
+
+
+
+<!-- OAS AD 'Bottom' end -->
+</dd>
+
+</dl>
+
+
+<noscript>
+
+<dl class="google-ad  noscript">
+  
+    <dt class="hide">Advertisement</dt>
+  
+    
+    <dd>
+        <a href="http://oas.biomedcentral.com/RealMedia/ads/click_nx.ads/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/12578080335@Bottom?">
+            <img src="http://oas.biomedcentral.com/RealMedia/ads/adstream_nx.ads/biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206/11531446526@Bottom?" alt="advert"/>
+        </a>
+    </dd>
+</dl>
+</noscript>
+    <hr class="hide">
+    
+
+<div id="footer">
+
+    <div class="rounded ">
+    <div class="t png_bg">
+        <div class="r png_bg"></div>
+    </div>
+    <div class="m">
+    <div class="r">
+        <div class="wrap-inner ">
+                    <ul>
+                                                    
+				        <li class="noborder"><a href="http://www.biomedcentral.com/about/tandc">Terms and Conditions</a></li>
+<li><a href="http://www.biomedcentral.com/about/privacy">Privacy statement</a></li>
+<li><a href="http://www.biomedcentral.com/presscenter">Press</a></li>
+	<li><a href="http://www.biomedcentral.com/advertisers">Information for advertisers</a></li>
+<li><a href="http://www.biomedcentral.com/about/bmcjobs">Jobs at BMC</a></li>
+<li><a href="http://www.biomedcentral.com/support">Support</a></li>
+<li><a href="http://www.biomedcentral.com/about/contact">Contact us</a></li>
+
+
+    
+    
+    </ul>
+    <p id="copyright">© 2012 
+	BioMed Central Ltd unless otherwise stated. Part of Springer Science+Business Media.</p>
+                    </div>
+    </div>
+    </div>
+    <div class="b png_bg">
+        <div class="r png_bg"></div>
+    </div>
+</div>
+    </div>    
+
+<div id="analytics">
+		<script type="text/javascript" src="bmcBioinformatics_test_files/ga.js"></script>
+	
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-72326-1");
+		_gat._anonymizeIp();
+        pageTracker._setLocalRemoteServerMode();
+        pageTracker._initData();
+        pageTracker._setCustomVar(1,"Design","new",3);
+        		pageTracker._trackPageview();
+	</script>
+</div>
+    
+<script type="text/javascript" src="bmcBioinformatics_test_files/jquery_002.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') { document.write(decodeURIComponent("%3Cscript src='/javascript/plugins/jquery.min.js' type='text/javascript'%3E%3C/script%3E")); }
+
+document.documentElement.id = "js";
+
+var site = {
+    abbreviation: "/bmcbioinformatics",
+            type: "BMC_CORE",
+        portalId: "9001",
+                section: "browse",
+                page: "fulltext",
+    		
+									homePortal: "biomedcentral.com",
+		  
+
+			siteShowAds: "true",
+				showAds: "true",
+				url: "biomedcentral.com/bmcbioinformatics",
+			portal: false,
+	        adpage_url: "biomedcentral.com/bmcbioinformatics/article/10.1186/1471/2105/13/206",
+        id: "1002",
+	name: "BMC Bioinformatics"
+	
+};
+if(typeof quoteSearchUri == "undefined") { quoteSearchUri=null; }
+</script>
+
+
+        <script type="text/javascript" src="bmcBioinformatics_test_files/behaviours-0.js"></script>
+
+         <script type="text/javascript" src="bmcBioinformatics_test_files/jquery.js"></script>
+ 
+
+
+	        <script type="text/javascript" src="bmcBioinformatics_test_files/browse-0.js"></script>
+
+
+
+	        <script type="text/javascript" src="bmcBioinformatics_test_files/flowplayer-3.js"></script>
+
+
+
+
+
+
+            <script type="text/javascript" src="bmcBioinformatics_test_files/articles-0.js"></script>
+            <script type="text/javascript" src="bmcBioinformatics_test_files/jmol-0.js"></script>
+            <script type="text/javascript" src="bmcBioinformatics_test_files/jquery_003.js"></script>
+		        <script type="text/javascript" src="bmcBioinformatics_test_files/social_sharing-0.js"></script>
+		<div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="bmcBioinformatics_test_files/xd_arbiter.htm" name="fb_xdm_frame_http" id="fb_xdm_frame_http"></iframe><iframe src="bmcBioinformatics_test_files/xd_arbiter_002.htm" name="fb_xdm_frame_https" id="fb_xdm_frame_https"></iframe></div><div></div></div></div>
+
+
+
+
+
+
+
+
+
+<!--[if lte IE 6]>
+            <script type="text/javascript" src="/javascript/plugins/DD_belatedPNG_0.0.8a-0.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('.png_bg, ul.primary-nav li a, ul.primary-nav li a span, ul.secondary-nav li a, ul.secondary-nav li a span, ul li i, .plus-button, .facebook, .twitter, .fancy-bg, #fancybox-close');
+    </script>
+	                <link rel="stylesheet" type="text/css" href="/css/hacks/ie6-0.css"/>
+    <![endif]-->
+
+<!-- Claudia Whitcombe wanted this comment here -->
+
+
+
+
+
+<div style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px none; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: 'MathJax_Size1',monospace;">() [] {} </div></body></html>

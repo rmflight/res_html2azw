@@ -1,0 +1,514 @@
+/* Articles
+	general and specific styles used on abstract, full text and qc articles
+---------------------------------------------------------------------------
+
+	T.O.C
+		=sharing
+		=qc articles
+		=full text
+		=right hand nav
+		=left hand column
+		=prepub
+		=img highlight
+		=article stats
+		=comments
+*/
+
+/* article  headings */
+div.article .wrap-inner.content h5 {
+    font-size: 1em;
+}
+
+/* h: no primary/secondary/tertiary columns in xsl */
+div.rounded.article {
+	width:784px;
+}
+div#guard-page.article {
+	width: 100%!important;
+}
+div.article.full-text {
+	width:608px;
+	float:right;
+	margin-right:16px;
+}
+/** h: these are like the .articletype header on full text pages */
+.comments h1, .email2friend h1, .citation h1, .prepublication h1, .article h1, .post-comment h1 {
+	font-size:1em;
+	margin:0
+}
+a.sharethis_title {padding:0; text-decoration: none;}
+.sharethis_title .icon {
+background: url('../images/furniture.png') no-repeat -169px -124px; 
+width: 16px; 
+height: 16px;
+margin: 0 4px 0 -2px;
+display: inline-block;
+}
+/* Sharing Buttons */ 
+#social-networking-links {margin-top: 4px; float: left; width:130px; overflow: visible;}
+#social-networking-links li {margin-left: 8px; margin-top: 5px;}
+
+/* sharing - social sharing box */
+.iconlist li {
+	margin: 2px 0 2px 8px;
+}
+
+#content a.sharethis_title  {
+text-decoration: none;
+color: #333;
+}
+
+#sharethis {/* this id is added to iconlist by js*/
+	position:absolute;
+	right: 0px;
+	width:179px;
+	padding:5px;
+	background:white;
+	border:1px solid #d3d1d1;
+	z-index:100;
+	bottom: -68px;
+}
+div.block ul.iconlist li {
+	float: left;
+	width:79px;
+}
+div.block ul.iconlist li a {
+	padding: 0;
+	position: relative;
+}
+div.block ul.iconlist li img {
+	margin-right: 3px;
+	}
+.article {
+	margin-bottom:1.5em;
+	color:#000;
+} /* To override grey bodytext colour in articles where necessary */
+.article .block ul li {
+	clear:left
+} 
+/* position of doi text */
+#content .article .pseudotab, #content .citation .pseudotab {
+	margin-left: 20px;
+    padding: 0 5px 0 5px;
+}
+.multipleins .authors sup {
+	padding-right:0.2em
+}
+/** =Left Hand Column */
+.outline-wrapper {
+	position:fixed;
+	float:left;
+	/*z-index: 3000; messes with lightbox */
+	overflow: visible;
+}
+.outline-wrapper #outline, .outline-wrapper.block {
+	overflow: visible;
+	z-index: 9999;
+}
+#outline {
+	width: 119px;
+}
+#outline li {
+	list-style-type:none;
+	min-height:26px;
+	overflow:hidden;
+	/* position:relative; */
+	vertical-align:top;
+	width:125px;
+	padding: 0px;
+}
+#outline li.long {
+	overflow:visible;
+	z-index: 1000; /* required for mathml */
+}
+#outline a {
+	color: #6A747C;
+	display:block;
+	text-decoration:none!important;
+	padding: 5px 5px 5px 7px;
+}
+
+#outline a.full {
+	background-color:#f2f2f2;
+	border-top: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+	border-right: 1px dashed #ccc;
+	color: #000!important;
+	left:0;
+	margin:-1px 0 0;
+	overflow: visible;
+	position:absolute;
+	text-align:left;
+	top:auto;
+	white-space:nowrap;
+	min-width: 150px;
+	width:auto;
+}
+
+#article-navigation-bar ul#authg, #article-navigation-bar ul#authpm {
+	overflow: visible; /* bfc */
+}
+#topmatter table td {
+	padding-right:1em;
+}
+#topmmatter h1.smallheading {
+	font-weight:bold;
+	line-height: 20px;}
+
+#topmatter span.articletype{
+	font-weight:bold;
+	float:left;
+	margin:8px 0 3px;}
+
+.rounded.custom.white.article h1 {
+	clear:both;
+}
+
+#affiliations {
+	margin-top:5px;
+}
+a.affiliations-toggle {
+	margin-left: 13px;
+	text-decoration: none!important;
+	cursor:pointer;
+}
+a.affiliations-toggle:hover {
+	text-decoration: underline;
+}
+
+#content .article #affiliations ul li {
+	background: none;
+	list-style: none;
+	margin: 0;
+}
+
+.article .module.inner.alt .module-inner p {
+	margin-bottom: 0;
+}
+.article .module.inner.alt {
+	margin-top: 20px
+}
+#guard-page.article .module.inner.alt {
+	margin-top: 0;
+}
+/* =right hand nav */
+#article-navigation-bar {
+	float: right;
+	width: 160px;
+	position: relative;
+}
+	.primary-content #article-navigation-bar { width: 160px; }
+	
+	/* add margin when js is disabled to show sharethis box */
+	#nojs #article-navigation-bar {
+		margin-bottom: 35px;
+	}
+#article-navigation-bar ul.square li {
+	margin: 0;
+}
+#article-navigation-bar ul.square.normal li strong {
+	padding-left: 8px;
+	float:left;
+}
+#article-navigation-bar h6 {
+	margin-left: 3px;
+}
+#related-literature-links ul, .issue-information ul.normal {
+	margin-bottom: 0;
+}
+#related-literature-links {
+	margin-bottom: 1em;
+}
+/** =Full Text
+* These are styles which are specific to full text
+*/
+
+/** h: used to display long mathml images
+* narrow central column = overflow long mathml images so they are visible.
+*/
+.rounded.full-text, .rounded.full-text .m, .rounded.full-text .m .r, .full-text p, .full-text img.mathimg {
+	overflow: visible;
+}
+
+#js div.rounded.full-text .m .r {
+	*overflow: hidden;
+}
+
+.wrap-inner.content .fig p, .wrap-inner.content .figs p {
+	margin-bottom: 0;
+}
+
+.figs {
+	margin-bottom: -1em;
+	width: 100%;
+}
+
+.full-text p, .full-text h4, .full-text h3 { clear: both; }
+
+.fig {
+	float: left;
+	
+	}
+
+.fig,.figs .table,.addfile{background-color:#F7F7F7;border-top:1px solid #D3D1D1;border-bottom:1px solid #D3D1D1;margin-bottom:1.4em;padding:.6em;width:95%;margin-left:1%;}
+
+
+.addfile p {
+	margin-bottom: 0.4em;
+}
+.figs img {
+	float:left;
+	margin:3px 15px 0 0;
+}
+.fig p {
+	margin: 0;
+}
+
+.open-data-icon { width: 100%; display: inline-block; }
+.open-data-icon img { float: right; padding: 0; margin: 0; }
+
+.inlinenumber {
+	text-align:center;
+}
+.inlinenumber span {
+	text-align: right;
+	float: right;
+}
+.inlinenumber span.entity {
+float:none;
+position:static;
+}
+.mathMlContainer{
+	text-align:center;
+	margin:0px 0px 1em;
+}
+
+span.monospace {
+	font-weight: normal; 
+	font-family: Courier, 'Courier New', monospace;
+}
+#topmatter .pseudotabau {
+	margin-left:10px;
+}
+
+#affiliations #ins_container p  {
+	margin-left:1.4em;
+}
+#affiliations #ins_container p.singleInstitute {
+	margin-left:0em;
+}
+#affiliations li p{
+	margin-left:1.1em !important;
+}
+#affiliations li p.singleCa{
+	margin-left:0em !important;
+}
+#authoremails {
+	margin-left:0 !important; margin-top: 1em;
+}
+#affiliations #ins_container p sup[id] {
+	position:absolute;
+	left:0.1em;
+	width: 20px;
+	display: block;
+	text-align: right;
+}
+#affiliations li p span {
+	position:absolute;
+	left:0.9em;
+}
+#affiliations.custom .module.inner {
+	margin-bottom:0px
+}
+#references {
+	list-style: decimal;
+}
+#references p {
+	margin: 0;
+	overflow: visible;
+}
+#references p img{
+vertical-align:middle;
+}
+#references li {
+	margin-bottom: 1.4em;
+}
+#references :target, #endnotes :target, #footnotes :target {
+	background-color: #f2f2f2;
+}
+#references :not(:target) .totext, #endnotes :not(:target) .totext, #footnotes :not(:target) .totext {
+display:none
+}
+
+ol#references li p a[name] {
+    display: none;
+}
+
+:target .totext {
+	display: block;
+}
+
+.xpushbutton {
+	border-color: #B2C1E0 #003399 #003399 #B2C1E0;
+	border-style:solid;
+	border-width:1px;
+	font-size:11px;
+	font-style:italic;
+	font-weight: normal;
+	line-height:14px;
+	padding:0 5px;
+	text-decoration:underline;
+	overflow: visible;
+}
+.xpushbutton:hover {
+	border:1px solid;
+	border-color: #039 #b2c1e0 #b2c1e0 #039;
+	color:#039;
+	text-decoration:none;
+}
+img.mathimg {
+	vertical-align: middle;
+	float:none;
+	margin:0;
+}
+/* =affiliations toggle box */
+.article p.options {
+	position: relative;
+	left: auto;
+	width: 140px;
+	padding: 3px 0;
+	top: 0px;
+}
+.article p.options {
+	display: block;
+	position: inherit;
+	text-align: right;
+	width: 100%;
+
+}
+.article p.options i.arrow {
+	margin: 3px 8px 0 0px;
+	float: none;
+	display: inline-block;
+	left: auto;
+	right: auto;
+	position: inherit;
+}
+
+.figs .scheme { margin-bottom: 2em; }
+
+/** =QC article
+* These are styles which are specific to an article in qc status.
+*/
+table.plaintable td {
+	padding-right:10px;
+}
+div#cqbox {
+	background-color: #FAFAFA;
+	border:1px solid #E6E5E5;
+	padding:10px 10px 10px 10px;
+	margin-bottom:20px;
+	font-family: "Courier New";
+}
+div#cqbox a, div#cqbox a:hover {
+	color: #ff0000;
+}
+div#cqbox a:hover {
+	text-decoration: underline;
+}
+div#cqbox h5 {
+	color: #000;
+	margin-top:10px;
+}
+div#cqbox p {
+	margin-bottom:0px !important;
+}
+div#cqbox .lineref {
+color:#f00
+}
+div#cqbox .lineref span.math {
+color:#000
+}
+
+div#qcarticle {margin-left:50px}
+div#qcarticle p {
+	overflow: visible;
+}
+.qccheck {
+	color:#ff0000;
+}
+
+#qcarticle .lineno, #qcarticle h3 span, #qcarticle h4 span {
+	color:#ff0000;
+	margin-right: 2px;
+	font-family: "Courier New";
+	
+}
+#qcarticle .lineno {
+font-weight:bold;
+font-family: "Courier New";
+}
+
+/** =Prepub */
+#pre-publication-events td {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+#pre-publication-events {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-color: #D1D1D1;
+	border: solid 1px;
+	padding: 1em;
+	margin-top: 1em;
+}
+#pre-publication-events tr.even {
+	background-color: #F7F7F7;
+}
+.prepublication table {
+	width:99% !important;
+}
+#guard-page.article .module.inner.alt {
+	margin-top: 0;
+}
+	
+.xfullindent1 {padding-left:0.6em}
+.xfullindent2 {padding-left:1.2em}
+.xfullindent3 {padding-left:1.8em}
+
+.article .wrap-inner.content .multilang h3{margin-top:0;}
+.article .multilang.module.inner{overflow:visible;width:102%;margin-left:-7px;}
+.article .multilang.module.inner h1{margin-bottom:10px;}
+.article .multilang h1{font-size:1.5em;line-height:1.2em;}
+.article .multilang h3, .article .multilang h4, .article .multilang h5 {margin-top:0.6em}
+.article .wrap-inner.content .keywords{padding-top:.35em;margin:0;display:block;}
+.article .wrap-inner.content  #keywords h5{font-size:1.1em}
+
+.article .super-script {position:relative;top:-5px;font-size:80%}
+
+.article #endnotes p {margin-bottom:0;padding:0;margin-top:0.8em}
+.article #endnotes li {list-style-type:lower-alpha;margin-top:0.8em;padding-bottom:0.4em}
+
+/* =article stats */
+#nojs #article-stats div#citations_biomedcentral_articles { display: none; }
+#article div.forward_citation_article, #article-stats div#citations_biomedcentral_articles{ padding: 12px; }
+.primary-content.article-stats { overflow: visible; }
+.accordion .wrap-in a span.view-citations { float: right; margin-right: 10px; }
+.secondary-content.article #article-stats ul li { margin: 0.5em; }
+#content .article #article-references ul li, #content .article #article-references ol li {padding:0px;margin:0px;margin-top:1.4em;}
+
+#article-badges {clear:both; float: left; margin-bottom: 10px; margin-left:15px;}
+#article-badges .article-badge{float:left; text-align:center; margin-right:40px}
+#article-badges .article-badge:last-child{margin-right:0}
+#article-badges p {margin-bottom:0}
+#f1000-badge-container {padding-top:4px;}
+#f1000-badge-container p{padding-top:3px;}
+#f1000-badge-container img{
+	-webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*User comments*/
+#content ul.standalone li {	background:url("../images/icons/square1.png") no-repeat scroll 0 7px transparent; margin: 1em 0 1em 2em; padding-left:15px}
