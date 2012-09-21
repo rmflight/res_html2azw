@@ -1,0 +1,185 @@
+/* 
+****
+* Tablet break point 
+* Second break point for tablets, can be used to target iPad in portrait
+****
+*/
+
+@media screen and (max-width: 768px) {
+    
+    dl.archive-navigation dd {
+        width:auto;
+        float:none;
+    }
+
+	#main-navigation {
+		background: #671015;
+		background: -webkit-gradient(linear, 0 0, 0 30, from(#9d1c24), to(#671015));
+		background: -moz-linear-gradient(top, #9d1c24, #671015 30px);
+    }
+
+    #main-navigation li a {
+        border-left: solid 1px #671015;
+        border-right: solid 1px #9d1c24;
+    }
+
+    #main-navigation li:last-child a {
+        border-right: 0 none;
+    }
+
+    /* Homepage */ 
+    #explore .list-set-wrapper {
+        width:auto;
+    }
+    
+    #content .content-block-single {
+        width:100%;
+    }
+
+	#careers-jobs {
+		margin-top:20px;
+	}
+	
+	.focus-box {
+		border:none;
+	}
+	
+	.focus-box .inner ul {
+		width:97%;
+	}
+    
+    ul.tags {
+        display:none;
+    }
+    
+   #news-comment .column-second,  #news-comment .column-first {
+       width: 100%;
+    }
+
+   #content .content-block-full {
+       width: 100%;
+    }
+
+
+   .lead-teaser div.media img {
+       width:auto;
+    }
+
+   .lead-teaser div.media p {
+       text-align:left;
+       width:100%;
+    }
+
+   .lead-teaser {
+       padding-right:0;
+    }
+
+   #content .content-block-full header a.more {
+       position:relative;
+    }
+
+   .carousel {
+       display:none;
+    }
+
+	/* Special and suppliment page*/
+
+   ul.article-list {
+	    width:auto;
+	}
+	
+	/* Audio and Video page */
+	
+	ul.video-list li, ul.podcast-list li {
+		width:99%;
+	}    
+}
+
+/* 
+****
+* Mobile break point 
+* Mobile break point, trying to target as many different devices as possible
+****
+*/
+
+@media screen and (min-width : 320px) and (max-width : 480px),
+        screen and (-webkit-device-pixel-ratio : 2) and (max-width : 640px) and (orientation : landscape),
+        screen and (-webkit-device-pixel-ratio : 2) and (max-width : 360px) and (orientation : portrait),
+        screen and (-webkit-device-pixel-ratio : 1.5) and (max-width : 640px) and (orientation : landscape),
+        screen and (-o-device-pixel-ratio : 3/2) and (max-width : 640px) and (orientation : landscape) {
+
+	/* 
+	****
+	* Page Structure
+	****
+	*/
+
+	.content-block-full #news-comment {
+		display: none;
+	}
+	
+	/* 
+	****
+	* Page Header & Navigation
+	****
+	*/
+	
+	.home #header, .home #header.v2, body #header, body #header.v2 {
+		background: url("/view/nature/images/journal_mobile_header.jpg") no-repeat scroll left top #87201b;
+    }
+
+    #main-navigation {
+    	background: #ffffff;
+    }
+	
+	body #main-navigation li a {
+		font-size: 1em;
+		background:#671015;
+		background: -webkit-gradient(linear, 0 0, 0 30, from(#9d1c24), to(#671015));
+		background: -moz-linear-gradient(top, #9d1c24, #671015 30px);
+	}
+	
+	#main-navigation li.active a {
+		background:#9d1c24;
+		background: -webkit-gradient(linear, 0 0, 0 30, from(#671015), to(#9d1c24));
+		background: -moz-linear-gradient(top, #671015, #9d1c24 30px);
+		opacity:0.9;
+	}
+
+	/* 
+	****
+	* Other page sections
+	****
+	*/
+
+    .section .inner a.more.lang-ja {
+		position: relative;
+		clear: both;
+		margin: 0 0 5px 0;
+	}
+
+    .lead-teaser div.media img {
+        width:100%;
+    }
+
+	#research .primary-heading span, body.research .primary-heading span, body.research .secondary-heading span {
+		display: inline-block;
+	}
+}
+
+
+	/* 
+	****
+	* iPhone 4 images
+	* Double size images which are then scaled down by half to produce nice header images on retenia display
+	****
+	*/
+
+@media only screen and (-webkit-device-pixel-ratio : 2) and (max-width : 640px) and (orientation : landscape),
+        screen and (-webkit-device-pixel-ratio : 2) and (max-width : 360px) and (orientation : portrait) { 
+	
+	.home #header, .home #header.v2, body #header, body #header.v2 {
+		background: url("/view/nature/images/journal_mobile_header_x2.jpg") no-repeat scroll left top #87201b;
+		background-size: 320px 50px;
+    }
+}

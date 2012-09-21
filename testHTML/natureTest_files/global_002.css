@@ -1,0 +1,681 @@
+/*
+ *
+ *
+ *		global.sidebar.css
+ *		
+ *		Site-wide styles for sidebar modules
+ *		
+ *		@scope: 	Included on all AIP pages
+ *		
+ *		@history: 	created from styles cropped out of global.article.css and global.page.css - goo.gl/YMhDF
+ *		
+ *		
+ */
+
+/* Spacing all sidebar modules */
+#extranav div.module,
+#extranav div.ad {
+	margin: 0 0 20px!important;
+}
+
+#extranav .module-bidi h2 {
+	font-size: 150%;
+	font-weight: normal;
+	color: #777;
+	border-bottom: 1px solid #DDD;
+	padding: 0 0 3px;
+	margin:0;
+}
+.module-bidi li {
+	border-top:3px double #DDD;
+	margin: 0 0 8px;
+	padding: 8px 0 0;
+}
+.module-bidi li.first {
+	border-top:0;
+}
+.module-bidi p.continue {
+	text-align: right;
+}
+#extranav .module-bidi h3 {
+	margin:0;
+}
+#extranav .module-bidi h4 {
+	font-size: 90%;
+	margin:0;
+}
+/*
+ * 
+ *    Generic Box Styles
+ *
+ */
+
+#extranav div.box {
+    border: 1px solid #E7E7E7;
+    margin: 0;
+    padding: 9px;
+}
+#extranav div.box-padding {
+    padding: 9px;
+}
+#extranav div.no-padding {
+    padding: 0;
+}
+
+#extranav div.box h2,
+#extranav div.box h3,
+#extranav div.box h4,
+#extranav div.box h5,
+#extranav div.box p,
+#extranav div.box ol,
+#extranav div.box ul,
+#extranav div.box dl {
+    margin: 0;
+}
+
+#extranav div.box ol {
+	list-style-position: outside;
+	padding: 0 0 0 20px;
+}
+#extranav div.box ol li {
+	list-style: decimal;
+}
+#extranav div.box li {
+	padding: 5px 0;
+}
+#extranav div.box li li {
+	padding: 0;
+}
+
+#extranav .box-footer {
+	background: #fff url(/view/images/bg_light_grad.gif) repeat-x 0 0;
+	margin: 0;
+	padding: 2px 9px;
+	text-align: right;
+}
+#extranav div.box .box-footer {
+    border: 0;
+    border-top: 1px solid #C8C7CF;
+}
+#extranav ul.box-footer li {
+	float: left;
+	padding: 0;
+}
+#extranav ul.box-footer li.last {
+	float: right;
+}
+
+/*
+ * 
+ *    End Generic Box Styles
+ *
+ */
+
+
+
+/* Ad styles */
+#extranav div.ad img,
+#extranav div.ad object,
+#extranav div.ad embed,
+#extranav div.ad iframe {
+	display: block;
+	margin: 0 auto;
+}
+#extranav div.wide-skyscraper {
+	background: #f1f2f6;
+	text-align: center;
+	padding: 10px 0;
+	border: 1px solid #e7e7e7;
+}
+/* @ not sure this stuff belongs in here, wtf is .content?! */
+div.content div.ad {
+	float: right;
+	clear: right;
+	margin: 10px 0 10px 10px;
+}
+div.content div.ad a {
+	border-bottom: 0 none;
+}
+
+
+
+/*
+ * 
+ *    Generic Tabbed Modules
+ *
+ */
+ 
+/* Overall heading for the group */
+#extranav h2.tab-group-heading {
+	padding: 9px;
+}
+html.js-enabled #extranav h2.tab-group-heading {
+	padding: 0;
+}
+
+html.js-enabled #extranav div.tab-group {
+	position: relative;
+}
+
+#extranav div.tab-box {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+/* Individual tab headings */
+#extranav div.tab-box h3.tab {
+	padding: 9px 9px 0;
+}
+html.js-enabled #extranav div.tab-box h3.tab {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 1;
+}
+html.js-enabled #extranav div.tab-box h3.tab a {
+	background: #afb8c1 url(/view/images/bg_dark_grad.gif) repeat-x 0 0;
+	border-bottom: 1px solid #e7e7e7;
+	color: #fff;
+	display: block;
+	font-size: 91%;
+	font-weight: normal;
+	margin: 0;
+	padding: 3px;
+	overflow: hidden;
+	text-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+html.js-enabled #extranav div.active h3.tab a,
+html.js-enabled #extranav div.tab-box h3.tab a:hover {
+	background: #fff url(/view/images/bg_light_grad.gif) repeat-x 0 0;
+	border: 1px solid #e7e7e7;
+	color: #333;
+	cursor: default;
+	padding: 2px 3px 3px;
+	text-decoration: none;
+}
+html.js-enabled #extranav div.active h3.tab a,
+html.js-enabled #extranav div.active h3.tab a:hover {
+    border-bottom: 0;
+	padding-bottom: 4px;
+}
+/* Tab content areas (on or off) */
+#extranav div.tab-content div.box-padding {
+	/*padding-top: 0;*/
+	overflow: auto;
+}
+html.js-enabled #extranav div.tab-group div.tab-box div.tab-content {
+	border: 1px solid #e7e7e7;
+	display: none;
+}
+html.js-enabled #extranav div.tab-group div.active div.tab-content {
+	display: block;
+}
+
+/* Tab bar - a purely aesthetic drawing div to add 1px under any missing tab spaces */
+html.js-enabled div.tab-group div.tab-bar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+/*
+ * 
+ *    End Generic Tabbed Modules
+ *
+ */
+
+/* featured events/jobs boxes only appear to be used by ncomms at this stage - more styling may be necessary before use elsewhere */
+#featured-events-box h2 .type,
+#featured-jobs-box h2 .type {
+    display: block;
+}
+#extranav #featured-events-box p strong,
+#extranav #featured-jobs-box p strong {
+    display: block;
+}
+#extranav #featured-events-box .box-footer {
+    text-align: left;
+}
+#extranav #featured-events-box .box-footer .site {
+	color: #444;
+	display: block;
+}
+
+
+/*
+ * 
+ *    "Inside this article" Compounds Tab
+ *
+ */
+html.js-enabled #inside-article-compounds div.tab-content {
+	position: relative;
+}
+html.js-enabled #inside-article-compounds a.compound-nav {
+	position: absolute;
+	top: 45px;
+	width: 24px;
+	height: 25px;
+	overflow: hidden;
+}
+html.js-enabled #inside-article-compounds a.compound-nav span {
+	visibility: hidden;
+}
+html.js-enabled #inside-article-compounds a.compound-nav:hover {
+	text-decoration: none;
+}
+html.js-enabled #inside-article-compounds a.prev {
+	left: 0;
+	background: url(/view/images/arrow_left.gif) no-repeat 50% 50%;
+}
+html.js-enabled #inside-article-compounds a.prev:hover {
+	background-image: url(/view/images/arrow_left_dark.gif)
+}
+html.js-enabled #inside-article-compounds a.next {
+	right: 0;
+	background: url(/view/images/arrow_right.gif) no-repeat 50% 50%;
+}
+html.js-enabled #inside-article-compounds a.next:hover {
+	background-image: url(/view/images/arrow_right_dark.gif)
+}
+html.js-enabled #inside-article-compounds ol,
+html.js-enabled #inside-article-compounds li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+html.js-enabled #inside-article-compounds li {
+	display: none;
+}
+html.js-enabled #extranav #inside-article-compounds li.active {
+	text-align: center;
+	margin: 15px 15px 0;
+	padding: 0;
+	display: block;
+}
+html.js-enabled #inside-article-compounds span.index {
+	font-weight: bold;
+	padding-right: 0.2em;
+}
+html.js-enabled #inside-article-compounds span.total {
+	font-weight: bold;
+	padding-left: 0.2em;
+	padding-right: 6.2em;
+}
+/*
+ * 
+ *    End "Inside this article" Compounds Tab
+ *
+ */
+
+/* Article list styles for Top Content module*/
+#extranav #top-content .standard-teaser h1 {
+	font-weight: bold;
+}
+#extranav #top-content li span.journal-title {
+	padding: 0 5px 0 0;
+}
+#extranav #top-content li span.time {
+	padding: 0 0 0 7px;
+	background: url(/view/images/bg_pipe.gif) no-repeat 0 0.4ex;
+}
+
+
+
+
+
+
+
+
+/* From v2 ui
+
+========================================================================================================================================================================
+
+*/
+
+#extranav h1,
+#extranav h2 {
+	color: #696969;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+#extranav h1.primary-heading,
+#extranav h2.primary-heading {
+	font-weight: normal;
+}
+
+
+
+
+
+
+/* From v1 main
+
+========================================================================================================================================================================
+
+*/
+
+
+/*
+li.compound-link {
+	width: 49%;
+	float: left;
+	font-size: 91%;
+}
+li.compound-link.last {
+	float: right;
+	text-align: right;
+}
+*/
+
+#protocols-related-research,
+#nature-jobs-box, 
+#nature-events-box,
+#open-innovation-box,
+#sponsors-box,
+#links-box,
+#special-feature-box {
+	background: #fff url(/view/images/bg_box_grad.gif) repeat-x 0 0
+}
+
+#nature-events-box h2,
+#nature-jobs-box h2 {
+	padding: 9px 9px 0;
+}
+
+#protocols-related-research span.journal-title {
+	padding: 0 5px 0 0;
+}
+
+#protocols-related-research span.time {
+	background: url(/view/images/bg_pipe.gif) no-repeat 0 0.4ex;
+	padding: 0 0 0 7px;
+}
+
+/*
+ * 
+ *    Open Innovation Module
+ *
+ */
+
+#extranav #open-innovation-box h2 {
+	margin-bottom: 9px;
+}
+
+#extranav #open-innovation-box ul.challenge-list img {
+	margin: 5px 5px 0 0;
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+#extranav #open-innovation-box ul.challenge-list dl {
+	float: left;
+}
+#extranav #open-innovation-box dt {
+	float: left;
+	clear: left;
+	padding: 0 0.3em 0 0;
+}
+#extranav #open-innovation-box dd {
+	float: left;
+	clear: right;
+}
+body.ie6 #extranav #open-innovation-box dd {
+	float: none;
+}
+#extranav #open-innovation-box dd.reward {
+	font-weight: bold;
+}
+#extranav #open-innovation-box ul.challenge-list h3 {
+	font-weight: bold;
+}
+#extranav #open-innovation-box ul.challenge-list p {
+	clear: both;
+}
+
+li.powered {
+	position: relative;
+	font-size: 91%;
+	width: 160px;
+	text-align: left;
+}
+li.powered a {
+	position: relative;
+
+}
+li.powered img {
+	position: absolute;
+	left: 3px;
+	top: -45%;
+}
+
+#inside-article li.powered {
+	font-style: italic;
+}
+#inside-article-antibodies li.powered a {
+	display: block;
+}
+
+
+#sponsors-box {
+	padding:10px 10px 0;
+}
+
+#sponsors-box li {
+	margin-bottom:10px;
+	text-align:center;
+}
+#links-box a {
+	display:block;
+}
+
+/*
+html.js-enabled #extranav div.tab-group div.active h3.tab {
+	background: #fff url(/view/images/bg_light_grad.gif) repeat-x 0 0;
+}
+html.js-enabled div.tab-group h3.tab a:hover {
+	border: 0;
+	color: #5a758a;
+	background: #fff url(/view/images/bg_light_grad.gif) repeat-x 0 0;
+}
+*/
+
+
+
+#extranav .toggle,
+#extranav div.player h2 {
+	margin-bottom: 0;
+}
+div.player div.box {
+	margin-top: 0;
+}
+body.ie6 div.player div.box {
+	position: relative;
+}
+div.player h3 {
+	padding: 3px 5px;
+	background: #b3b8be url(/view/images/bg_dark_grad.gif) repeat-x 0 0;
+	color: #fff;	
+}
+div.player div.description {
+	padding: 9px;
+}
+div.player a.video-link {
+	display: block;
+	border: 0 none!important;
+	font-weight: bold;
+}
+div.player object {
+	margin: 0 auto;
+	display: block;
+}
+#extranav div.player a:hover {
+	text-decoration: underline;
+}
+#extranav p.podcast-time {
+	margin: 9px 0 !important;
+}
+
+
+/* VIDEO PLAYER START */
+div.video-content {
+	background-color: #F1F2F6;
+	border: 1px solid #E7E7E7;
+	float: left;
+    margin: 0 10px 10px 0;
+	padding: 10px;
+}
+
+div.video-content.sidebar-video {
+	max-width: 278px;
+}
+
+.in-page-video div.video-information {
+	float: left;
+	display: block;
+	clear: both;
+	max-width: 280px;
+}
+
+#extranav div.video-content {
+	float: none;
+	margin: 20px 0;
+	overflow: visible;
+}
+div.video-content object {
+	float: left;
+}
+#extranav div.video-content h2,
+div.video-content h2 {
+	clear: both;
+	color: #111;
+	display: inline-block;
+	margin: 0;
+	padding: 5px 0;
+}
+#extranav div.video-content p,
+div.video-content p {
+    clear: both;
+    margin: 0;
+}
+
+.video-content-top .video-content {
+    margin:20px 0;
+    padding:0;
+    background-color:#333;
+    width: 100%;
+}
+.top-video {
+	width: 100%;
+	overflow: auto;
+}
+
+.video-content-top .video-content h2 {
+    clear:none;
+    color:#fff;
+    margin:10px 0;
+}
+
+.video-content-top .video-content .video-player {
+    float:left;
+}
+
+.video-content-top .video-content p {
+    color:#fff;
+    clear:none;
+}
+
+.video-content-top .video-information {
+		
+    padding-right:1em;
+    padding-left: 1em;
+    display: block;
+	float: left;
+	width: 45%;
+}
+
+body.ie7 .video-content-top .video-information {
+	max-width: 260px;
+}
+
+/* VIDEO PLAYER END */
+
+
+/*
+ * 
+ *    Edsumm Module
+ *
+ */
+
+#extranav #edsumm {
+	margin: 20px 0;
+}
+#extranav #edsumm h2 {
+	margin: 0;
+}
+#extranav #edsumm div.box h3 {
+	padding: 9px 9px 0;
+}
+#extranav #edsumm div.full-snippet,
+#extranav #edsumm div.snippet {
+	padding: 0 9px 9px;
+}
+html.js-enabled #extranav #edsumm div.full-snippet {
+	display: none;
+}
+
+body.ie6 #extranav #edsumm div.box {
+	zoom: 1;
+}
+
+/* @ poss move this stuff and make it generic */
+#extranav #edsumm a.toggle-bar,
+.box-element a.toggle-bar {
+	display: block;
+	background: #f1f2f6 url(/view/images/arrow_down.gif) no-repeat 50% 50%;
+	padding: 2px 0;
+	text-align: center;
+	border:0;
+}
+#extranav #edsumm a.toggle-bar:hover,
+.box-element a.toggle-bar:hover {
+	background-image: url(/view/images/arrow_down_dark.gif);
+	text-decoration: none;
+	border: 0;
+}
+
+#extranav a.toggle-bar span {
+	visibility: hidden;
+}
+
+#extranav #edsumm a.collapse,
+.box-element a.collapse {
+	background-image: url(/view/images/arrow_up.gif);
+}
+#extranav #edsumm a.collapse:hover,
+.box-element a.collapse:hover {
+	background-image: url(/view/images/arrow_up_dark.gif);
+}
+
+
+/* @ que?! */
+.box-internal a.toggle-bar span {
+	visibility: visible;
+	padding-right:80px;
+}
+
+/*
+ * 
+ *    End Edsumm Module
+ *
+ */

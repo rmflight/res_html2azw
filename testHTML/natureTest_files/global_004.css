@@ -1,0 +1,113 @@
+html.js-enabled div.collapsed .content {
+	display: block;
+}
+
+* {
+	background: transparent none !important;
+}
+
+div.article-tools,
+#quick-nav,
+#podcast-player,
+.section-nav,
+.figure-nav *,
+.search-form,
+.prev-next-article,
+.breadcrumbs,
+#leaderboard,
+.global-nav,
+#header,
+#comment-form,
+#comment-preview,
+#comments h2,
+#comments p.comment-notice, 
+.ad,
+ul.footer-links,
+#extranav .box-footer,
+ol.comments p.moderation, 
+ol.references ul,
+#author-links,
+.figure .resources,
+.box-element .resources,
+div.figures-at-a-glance,
+#highlighting-tool {
+	display: none;
+}
+
+body div .toggle a,
+#footer p.copyright,
+#comments ol.comments dl,
+#comments ol.comments p.datetime {
+	padding-left: 0 !important;
+}
+
+#constrain-content {
+	padding: 0;
+}
+#content {
+	float: none;
+}
+
+#extranav {
+	display: none;
+}
+.table .item-content {
+	display: none;
+}
+
+a {
+	border: 0 !important;
+	color: #444 !important;
+}
+
+div.box-element span.legend,
+div.figure span.legend {
+	page-break-after: avoid;
+}
+div.figure img,
+div.box-element img {
+	page-break-inside: avoid;
+}
+
+/*
+#extranav {
+	width: auto;
+	margin: 0;
+	float: none;
+}
+
+#nature-jobs-box, 
+#nature-events-box,
+#open-innovation-box,
+#citations-box,
+#subscribe-now {
+	display: none;
+}
+
+div.figure {
+	page-break-inside: avoid;
+}
+
+#extranav h2.tab-group-heading {
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 10px !important;
+}
+
+body #extranav div.tab-group div.tab-content {
+	border: 0 none !important;
+	padding-top: 10px !important;
+	display: block !important;
+}
+body #extranav div.tab-group h3.tab,
+body #extranav div.tab-group h3.tab a {
+	border: 0 none !important;
+	position: static !important;
+	font-weight: bold !important;
+	display: block !important;
+	padding: 0 !important;
+	text-align: left !important;
+}
+body #extranav div.tab-bar {
+	display: none;
+}
+*/

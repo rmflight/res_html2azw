@@ -1,0 +1,346 @@
+/*
+ *
+ *
+ *		global.shared.css
+ *		
+ *		Those few styles that don't relate to the layout, sidebar, article or non-article page content,
+ *		header, etc.  (That shouldn't be many - keep this file light!)
+ *		
+ *		@scope: 	Included on all AIP pages
+ *		
+ *		@history: 	created from assorted css with the advent of the v2 project: goo.gl/YMhDF
+ *		
+ *		
+ */
+
+body {
+    font-family: arial, helvetica, 'ＭＳ Ｐゴシック', 'ＭＳ ゴシック', 'Osaka', 'MS PGothic', sans-serif;
+    color: #333;
+}
+
+a { 
+	color: #069;
+	text-decoration: none;
+}
+a:active {
+	outline: 0 none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: #5C7996;
+}
+
+/*
+ * IE 6
+*/
+body.ie6 * {
+	zoom:1;
+}
+
+
+/* common text styles */
+
+em,
+i {
+	font-style: italic;
+}
+strong,
+b {
+	font-weight: bold;
+}
+cite {
+	font-style: normal;
+}
+sup,
+sub {
+	font-size: 85%;
+	line-height: 0;
+}
+sup {
+	vertical-align: super;
+}
+sub {
+	position: relative;
+	bottom: -0.6ex;
+}
+
+
+/* global message */
+
+div.global-message.minimised .content {
+	display:none
+}
+
+.global-message-contain {
+	position: relative;
+	border-color: #FFF;
+    border-style: solid solid none;
+    border-width: 6px 0 0;
+	line-height: 1.3em;
+}
+
+.global-message {
+	border: 1px solid #aeaeae;
+	background: #fbf9d3 url(/common/images/survey/main_bg.gif) no-repeat right bottom;
+	display: block;
+	position: relative;
+}
+
+div.global-message.minimised {
+	background-image: url(/common/images/survey/minimised_bg.gif);
+	background-position:right center;
+}
+
+div.global-message.minimised .wrapper {
+	background: url(/common/images/survey/tinyantibody2.jpg) no-repeat 5px 1px;
+ 	height: 23px;
+}
+
+.global-message a {
+	color:#ce0808;
+}
+
+.global-message .content {
+	padding:10px 5px 20px 130px;
+	background: url(/common/images/survey/antibody4.jpg) no-repeat 5px -20px;
+	position: relative;
+}
+
+.global-message.no-cookies .content {
+	padding:0 5px 0 10px;
+	background: transparent;
+}
+
+.global-message h1 {
+	font-size:120%;
+	margin:0 0 10px 0;
+	font-weight: bold;
+}
+
+.global-message .content h1 a {
+	font-weight: bold;
+	border-bottom: 0;
+}
+
+div.global-message.minimised h1 {
+	position:absolute;
+	top:3px;
+	left:50px;
+	font-size:100%;
+	margin:0;
+	background: url(/common/images/survey/arrow_triple.gif) no-repeat 0 0.7ex;
+	padding-left: 17px;
+	font-weight: bold;
+}
+
+.global-message .content p {
+	line-height:1;
+    margin-bottom: 1em;
+}
+
+.global-message p.action {
+	background: url(/common/images/survey/button_large.gif) no-repeat left top;
+	padding: 10px 0 9px 42px;
+	width: 180px;
+	height: 39px;
+	margin: 0 auto;
+	font-size: 130%;
+}
+
+.global-message p.action a {
+	font-weight:bold;
+	border-bottom: 0;
+	
+}
+
+/* if no images */
+
+div.global-message.no-image .wrapper {
+	background: none; 
+}
+
+div.global-message.no-image .content {
+	padding:10px 5px 20px 10px;
+	background: none;
+}
+
+div.global-message.minimised.no-image h1 {
+	left: 5px;
+}
+
+/* message control */
+.message-control {
+	border-top: 1px solid #aeaeae;
+	border-left: 1px solid #aeaeae;
+	margin:0;
+}
+
+.message-control a {
+	font-weight:bold;
+/*	font-size:80%;*/
+	background: #fff url(/common/images/survey/arrow_triple.gif) no-repeat 8px 50%;
+	padding: 3px 0 4px 25px;
+	display:block;
+}
+
+body.ie7 .message-control a {
+	padding: 1px 0 1px 25px;
+	height: 19px;
+}
+
+
+div.global-message.visible .message-control {
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:17em;
+}
+
+div.global-message.minimised .message-control {
+	float:right;
+	border-top: 0;
+	width:13em;
+	background-color: #fff;
+}
+
+body.ie7 div.global-message.minimised .message-control {
+	height: 100%;
+}
+
+div.global-message.minimised .message-control a.persistent {
+    float: left;
+}
+
+div.global-message.minimised a.remove {
+    background: none repeat scroll 0 0 transparent;
+    border-left: 1px solid #AEAEAE;
+    display: block;
+    float: right;
+    margin: 0 0 0 10px;
+    padding: 3px 5px 0;
+}
+
+body.ie7 div.global-message.minimised a.remove {
+	padding: 2px 5px;
+}
+body.ie6 div.global-message.minimised a.remove {
+	padding: 5px;
+}
+
+
+div.global-message.minimised a.remove img {
+	border: 0;
+}
+
+div.global-message a.remove {
+	position: absolute;
+	top: 0;
+	right: 0;
+    background: none repeat scroll 0 0 transparent;
+    border-left: 1px solid #AEAEAE;
+    display: block;
+    float: right;
+    margin: 0 0 0 10px;
+    padding: 3px 5px 0;
+}
+
+
+.js-enabled .nojava {
+	display: none;
+}
+
+
+/* end message control */
+/* end global message */
+
+/* modal window styles */
+#modalWindow {
+	font: 100%/1.231 arial,helvetica,clean,sans-serif;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+#modalWindow-body {
+	position: absolute;
+	z-index: 10000;
+	width: 100%;
+}
+#modalWindow-constrain {
+	max-width: 860px;
+	margin: 20px auto;
+}
+#modalWindow-content {
+	background-color: #fff;
+	border: 10px solid #d72222;
+	padding: 20px;
+}
+#modalWindow-shade {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.88;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=88)";
+	filter: alpha(opacity=88);
+}
+body.ie6 #modalWindow-shade, 
+body.ie7 #modalWindow-shade {
+	position: absolute;
+}
+#modalWindow .txt {
+	margin-top: 30px;
+}
+#modalWindow h1 {
+	font-size: 146.5%;
+	line-height: 1.173;
+	margin: 0;
+	padding: 0;
+}
+#modalWindow h1 .journalname {
+	color: #D72222;
+	font-style: italic;
+}
+#modalWindow h2 {
+	font-size: 116%;
+}
+#modalWindow h2 .journalname  {
+	font-style: italic;
+}
+#modalWindow a.close {
+	float: right;
+	font-size: 93%;
+	padding: 25px 25px 25px 0;
+	margin-right: 20px;
+	color: #000;
+	background: url(/view/images/close.jpg) no-repeat center right;
+	text-decoration: none;
+}
+#modalWindow a.close:hover,
+#modalWindow a.close:focus {
+	color: #000;
+	text-shadow: 0 0 4px rgba(255,255,255,0.5);
+	text-decoration: none;
+}
+#modalWindow #modal-header {
+	background: none;
+	margin-bottom: 20px;
+}
+#modalWindow #modal-footer {
+	position: relative;
+	min-height: 110px;
+}											
+#modalWindow #modal-footer .media-right {
+	right: 0;;
+}
+#modalWindow #modal-footer img {
+	position: absolute;
+	bottom: 0;
+}
