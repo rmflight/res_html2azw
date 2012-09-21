@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+        bnTagManager.getTag(1).results = [{"r":"<h4 class=\"cb-contents-header\">\n<span style=\"margin-top:10px;\"><\/span>\n<\/h4><ol style=\"padding-right:5px;\">\n<li>\n<div id=\"bn_g_resultbnArticleRecs_1\" class=\"bn_g_result bn_g_result\" style=\"margin:0 auto; padding:0;\">\n<div class=\"bn_g_result_title\" style=\"margin:0 auto; padding:0 5px 4px 0;\">\n<a class=\"bn_g_result_link\" baynote_req=\"ArticlePage\" baynote_guide=\"NextStepMatch\" baynote_bnrank=\"1\" href=\"http://bioinformatics.oxfordjournals.org/cgi/doi/10.1093/bioinformatics/bts399\">Telescoper: de novo assembly of highly repetitive regions<div class=\"bn_mouseoverdiv\">\n<span class=\"bn_journaltitle\"><b>Bioinformatics<\/b> - 2012<\/span>\n<br>\n<span class=\"bn_authorslist\"><\/span>\n<br>\n<span class=\"bn_viewCount\">158 readers also viewed this\n                     <\/span>\n<\/div>\n<\/a>\n<\/div>\n<\/div>\n<div id=\"bn_g_resultbnArticleRecs_2\" class=\"bn_g_result bn_g_result\" style=\"margin:0 auto; padding:0;\">\n<div class=\"bn_g_result_title\" style=\"margin:0 auto; padding:0 5px 4px 0;\">\n<a class=\"bn_g_result_link\" baynote_req=\"ArticlePage\" baynote_guide=\"NextStepMatch\" baynote_bnrank=\"2\" href=\"http://bioinformatics.oxfordjournals.org/cgi/doi/10.1093/bioinformatics/bts414\">Long read alignment based on maximal exact match seeds<div class=\"bn_mouseoverdiv\">\n<span class=\"bn_journaltitle\"><b>Bioinformatics<\/b> - 2012<\/span>\n<br>\n<span class=\"bn_authorslist\"><\/span>\n<br>\n<span class=\"bn_viewCount\">76 readers also viewed this\n                     <\/span>\n<\/div>\n<\/a>\n<\/div>\n<\/div>\n<div id=\"bn_g_resultbnArticleRecs_3\" class=\"bn_g_result bn_g_result\" style=\"margin:0 auto; padding:0;\">\n<div class=\"bn_g_result_title\" style=\"margin:0 auto; padding:0 5px 4px 0;\">\n<a class=\"bn_g_result_link\" baynote_req=\"ArticlePage\" baynote_guide=\"NextStepMatch\" baynote_bnrank=\"3\" href=\"http://bioinformatics.oxfordjournals.org/cgi/doi/10.1093/bioinformatics/bts378\">DELLY: structural variant discovery by integrated paired-end and split-read analysis<div class=\"bn_mouseoverdiv\">\n<span class=\"bn_journaltitle\"><b>Bioinformatics<\/b> - 2012<\/span>\n<br>\n<span class=\"bn_authorslist\"><\/span>\n<br>\n<span class=\"bn_viewCount\">95 readers also viewed this\n                     <\/span>\n<\/div>\n<\/a>\n<\/div>\n<\/div>\n<\/li>\n<\/ol>\n","ei":"bnArticleRecs","ri":"0:b3uP|b3uX|b3uZ|"}];
+        bnResourceManager.registerResource("GLResults1");
+

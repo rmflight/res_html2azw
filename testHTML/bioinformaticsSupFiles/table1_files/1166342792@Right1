@@ -1,0 +1,5 @@
+function OAS_RICH(position) {
+if (position == 'Right1') {
+document.write ('<A HREF="http://oas.oxfordjournals.org/5c/bioinformatics.oxfordjournals.org/content/28/18/i311/T1.expansion.html/L41/906484248/Right1/OxfordJournals/H_CABIOS_IF_2012_skyscrapernew.gif_JJ/CABIOS_IF_2012_skyscrapernew.gif/355252736f31426278566341435a3553?x" target="_top"><IMG SRC="http://imagec16.247realmedia.com/0/OxfordJournals/H_CABIOS_IF_2012_skyscrapernew.gif_JJ/CABIOS_IF_2012_skyscrapernew.gif"  ALT="CABIOS- Impact Factor"  BORDER="0"></A>');
+}
+}
