@@ -12,4 +12,7 @@ figDivs <- getNodeSet(hDoc, path='//*[@class="fig-inline"]')
 
 tmpDat <- figDivs[[1]]
 
-tmpRef <- xpathApply(tmpDat, path='a/@href')
+tmpRef <- as.character(xpathApply(tmpDat, path='a/@href')[[1]])
+
+figDoc <- htmlParse(file=tmpRef)
+figfigDivs <- getNodeSet(figDoc, path='//a/@href')
