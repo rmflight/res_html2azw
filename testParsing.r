@@ -15,4 +15,19 @@ tmpDat <- figDivs[[1]]
 tmpRef <- as.character(xpathApply(tmpDat, path='a/@href')[[1]])
 
 figDoc <- htmlParse(file=tmpRef)
-figfigDivs <- getNodeSet(figDoc, path='//a/@href')
+figfigDivs <- getNodeSet(figDoc, path='//*[@class="fig-expansion"]')
+tmp2 <- figfigDivs[[1]]
+fullFig <- as.character(xpathApply(tmp2, path='a/@href')[[1]])
+
+downLoadLoc <- dirname(tmpRef)
+figDownLoad <- file.path(downLoadLoc, fullFig)
+
+writeDir <- "extraFiles"
+dir.create(writeDir)
+fullFile <- file.path(writeDir, fullFig)
+download.file(url=figDownLoad, destfile=fullFile)
+
+chNodes <- xpathApply(tmpDat, "*")
+removeChildren(tmpDat, kids=chNodes)
+fig <- newXMLNode("img", attrs=c("source"=fullFile, "width"=800))
+addChildren(tmpDat, kids=list(fig))
