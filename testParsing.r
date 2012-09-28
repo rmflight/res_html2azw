@@ -25,9 +25,11 @@ figDownLoad <- file.path(downLoadLoc, fullFig)
 writeDir <- "extraFiles"
 dir.create(writeDir)
 fullFile <- file.path(writeDir, fullFig)
-download.file(url=figDownLoad, destfile=fullFile)
+download.file(url=figDownLoad, destfile=fullFile, mode="wb")
 
 chNodes <- xpathApply(tmpDat, "*")
 removeChildren(tmpDat, kids=chNodes)
-fig <- newXMLNode("img", attrs=c("source"=fullFile, "width"=800))
+fig <- newXMLNode("img", attrs=c("src"=fullFile, "width"=800))
 addChildren(tmpDat, kids=list(fig))
+
+saveXML(hDoc, file="testReplaceFig.html")
