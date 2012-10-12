@@ -1,12 +1,12 @@
 
 # work with the bioinformatics example
-urlTest <- "http://bioinformatics.oxfordjournals.org/content/28/18/i311.long"
-dir.create("fullTest")
-setwd("fullTest")
+urlTest <- "http://bioinformatics.oxfordjournals.org/content/28/20/2584.full"
+dir.create("fullTest2")
+setwd("fullTest2")
 
-download.file(urlTest, "test1.html")
+download.file(urlTest, "test2.html")
 
-hDoc <- htmlParse(file="test1.html")
+hDoc <- htmlParse(file="test2.html")
 
 writeDir <- "extraFiles"
 baseURL <- dirname(urlTest)
@@ -14,8 +14,15 @@ figDivs <- xpathApply(hDoc, path='//*[@class="fig-inline"]', replaceFigure, base
 
 tableDivs <- xpathApply(hDoc, path='//*[@class="table-inline"]', replaceTable, baseURL)
 
-saveXML(hDoc, file="test1.html")
+graphicDivs <- xpathApply(hDoc, path='//*[@class="inline-graphic"]')
 
-zip("test1.zip", c("test1.html", "extraFiles"))
+changeGraphic <- function(inDiv, baseURL){
+	nodeAtts <- xmlAttrs(inDiv)
+	fileSave <- paste(writeDir, basename(nodeAtts["src"], sep="/", collapse="/")
+}
 
-system("calibre ")
+saveXML(hDoc, file="test2.html")
+
+#zip("test1.zip", c("test2.html", "extraFiles"))
+
+system("ebook-convert test2.html test2.mobi")

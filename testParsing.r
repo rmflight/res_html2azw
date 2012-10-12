@@ -35,5 +35,7 @@ replaceTable <- function(inDiv, baseURL){
   invisible(addChildren(inDiv, kids=tableDivs))
 }
 
-
+replaceFormulas <- function(inDiv, baseURL){
+	tmpRef <- as.character()
+}
 
