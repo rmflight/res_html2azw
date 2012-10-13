@@ -1,6 +1,6 @@
 
 # work with the bioinformatics example
-urlTest <- "http://bioinformatics.oxfordjournals.org/content/28/20/2584.full"
+urlTest <- "http://bioinformatics.oxfordjournals.org/content/28/20/2624.full"
 dir.create("fullTest2")
 setwd("fullTest2")
 
@@ -14,12 +14,12 @@ figDivs <- xpathApply(hDoc, path='//*[@class="fig-inline"]', replaceFigure, base
 
 tableDivs <- xpathApply(hDoc, path='//*[@class="table-inline"]', replaceTable, baseURL)
 
-graphicDivs <- xpathApply(hDoc, path='//*[@class="inline-graphic"]')
 
-changeGraphic <- function(inDiv, baseURL){
-	nodeAtts <- xmlAttrs(inDiv)
-	fileSave <- paste(writeDir, basename(nodeAtts["src"], sep="/", collapse="/")
-}
+
+graphicDivs <- xpathApply(hDoc, path='//*[@class="inline-graphic"]', changeGraphic, baseURL)
+graphicDivs2 <- xpathApply(hDoc, path='//*[@class="graphic"]', changeGraphic, baseURL)
+
+
 
 saveXML(hDoc, file="test2.html")
 

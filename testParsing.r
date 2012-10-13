@@ -35,7 +35,12 @@ replaceTable <- function(inDiv, baseURL){
   invisible(addChildren(inDiv, kids=tableDivs))
 }
 
-replaceFormulas <- function(inDiv, baseURL){
-	tmpRef <- as.character()
+changeGraphic <- function(inDiv, baseURL){
+  nodeAtts <- xmlAttrs(inDiv)
+  fileSave <- paste(writeDir, basename(nodeAtts["src"]), sep="/", collapse="/")
+  fileSource <- paste(baseURL, nodeAtts["src"], sep="/", collapse="/")
+  download.file(url=fileSource, destfile=fileSave, mode="wb")
+  nodeAtts["src"] <- fileSave
+  xmlAttrs(inDiv) <- nodeAtts
 }
 
