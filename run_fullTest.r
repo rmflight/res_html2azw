@@ -1,12 +1,14 @@
 
 # work with the bioinformatics example
 urlTest <- "http://bioinformatics.oxfordjournals.org/content/28/20/2624.full"
-dir.create("fullTest2")
-setwd("fullTest2")
+useDir <- "bmcTest"
+htmlFile <- paste(useDir, ".html", sep="", collapse="")
+dir.create(useDir)
+setwd(useDir)
 
-download.file(urlTest, "test2.html")
+download.file(urlTest, htmlFile)
 
-hDoc <- htmlParse(file="test2.html")
+hDoc <- htmlParse(file=htmlFile)
 
 writeDir <- "extraFiles"
 baseURL <- dirname(urlTest)
