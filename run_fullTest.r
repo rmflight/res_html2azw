@@ -1,6 +1,6 @@
 
 # work with the bioinformatics example
-urlTest <- "http://bioinformatics.oxfordjournals.org/content/28/20/2624.full"
+urlTest <- "http://www.biomedcentral.com/1471-2105/13/79"
 useDir <- "bmcTest"
 htmlFile <- paste(useDir, ".html", sep="", collapse="")
 dir.create(useDir)
